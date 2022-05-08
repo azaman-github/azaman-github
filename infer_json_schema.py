@@ -1,7 +1,7 @@
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # Name        : infer_json_schema.py 
-# Description : The program is used to infer json schema (record types and attributes) from json file . 
-# Input       : json file 
+# Description : The program is used to infer json schema (record types and attributes) from json files . 
+# Input       : json file directory path 
 # Notes       : 1. Each record is fully flattened as follows :
 #
 # "extension": [
@@ -71,114 +71,111 @@ import  json
 import  os
 import sys
 import traceback
+from datetime import datetime as dt
 
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # Name     :load_json_file
 # Overview :The function is used to load json file into dictionary.
 # Notes    :
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-def  load_json_file() :
+def  load_json_file(file_path) :
      '''
-      load the input json file
+     The function loads the input json file into a dictionary.
      ''' 
-     global json_dict
-     global fh
      #
-     fh =  open (json_file, "rt" ) 
+     global work_schema_dict
+     work_schema_dict={}
      try : 
-           json_dict = json.load (fh) 
-           return True
+          with  open(file_path, "rt" ) as fh : 
+               work_schema_dict = json.load (fh) 
+               return True
      except  Exception as  e  :
-          print("ERROR:Failed to load the json file into python dictionary;see below for detaiils")
-          traceback.print_exc()
-          return False
+          raise Exception(f"ERROR:Failed to load the json file{file_path} into python dictionary because of {e}")
 #
 #+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-# Name     :process_list_values 
+# Name     :flatten_list_values 
 # Overview :The function is used to flatten a list value for a json object
 # Input    :key(string) , value(list)
 # Notes    :1. The function calls itself.
 #+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-def process_list_values (i_key,i_val) :
+def flatten_list_values (i_key,i_val) :
     #
     #
     for  li in i_val :
                 
         if ( (str(type(li))).find("'dict'")  != -1 ) :
-            process_dict_values(i_key,li) 
+            flatten_dict_values(i_key,li) 
 
         elif ( (str(type(li))).find("'list'")  != -1 ) :
             key=f"{i_key}-{str(seq_num)}"
-            process_list_values (key,li) 
+            flatten_list_values (key,li) 
 
         else :
-              process_string_value (i_key,i_val)
+              extract_att_from_flattened_key_val_pair (i_key,i_val)
 
 #+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-# Name     :process_dict_values
-# Overview :The function is used to flatten a dictionary value for a json object
+# Name     :flatten__dict_values
+# Overview :The function is used to flatten  dictionary values for a json object
 # Input    :key(string) , value(dictionary)
 # Notes    :1. The function calls itself.
 #+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-def process_dict_values (i_key,i_val) :
+def flatten_dict_values (i_key,i_val) :
 
     for k, v in i_val.items() :
 
         key=f"{i_key}-{k}"
 
         if ( (str(type(v))).find("'list'")  != -1 ) :
-           process_list_values (key, v)
+           flatten_list_values (key, v)
 
         elif ( (str(type(v))).find("'dict'")  != -1 ) :
-           process_dict_values(key,v)
+           flatten_dict_values(key,v)
 
         else :
-              process_string_value (key,v)
+              extract_att_from_flattened_key_val_pair (key,v)
 #+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-# Name     :process_string_value
+# Name     : extract_att_from_flattened_key_val_pair
 # Overview :The function is used to print key and value of a json object.
 # Input    :key(string) , value(string)
 # Notes    :
 #+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-def  process_string_value (i_key, i_val):
+def extract_att_from_flattened_key_val_pair(i_key,i_val):
      # 
-     global lort   # list of record types
-     global loa    # list of attributes
      global  cur_record_name
      global  key_sequence
      global ignore_att
      # 
-     rec_locator="entry-resource-resourceType"  # use this to identify new record 
-     #att_locator="entry-resource-               "
-     #                           15<---att name--->
-     att_locator="entry-resource-"
-     #
      if  i_key.find(rec_locator) !=  -1  :
-         #
-         # identfied  record type object
-         # split the input, i_key
-         #
-         keys=i_key.split("-")
-         if keys[-1] == "resourceType"  :
-              # this is next record type object
-              if  check_for_dup_record_name(i_val) :
+          #
+          # identfied  record type object
+          # split the input, i_key
+          #
+          keys=i_key.split("-")
+          #
+          # check last segment of composite key
+          #
+          if keys[-1] == "resourceType"  :
+               #
+               # this is next record type object
+               #
+               if check_for_dup_record_name(i_val) :
                     #
-                    # processed this record type
+                    # already captured this record type
                     # ignore all its attributes
                     #
                     ignore_att = True
-              else :
-                   # first occurrence of new record type  
-                   ignore_att = False
-                   key_sequence=0
-                   store_record_name(i_val)
-                   cur_record_name=i_val
+               else :
+                    # first occurrence of new record type  
+                    ignore_att = False
+                    key_sequence=0
+                    store_record_name(i_val)
+                    cur_record_name=i_val
      else :
           # processing attribute object 
           if ignore_att  :
              return True
           if i_key.find(att_locator) != -1  :
-               if  check_for_dup_att_name(cur_record_name, i_key) :
+               if check_for_dup_att_name(cur_record_name, i_key) :
                    #
                    # flattened attribute
                    # make it unique by appending a unique sequence
@@ -197,6 +194,7 @@ def  process_string_value (i_key, i_val):
 # Notes    :
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 def store_record_name(record_name) :
+     global schema_dict
      schema_dict[record_name] =[]
 
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -206,7 +204,7 @@ def store_record_name(record_name) :
 # Notes    :
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 def check_for_dup_record_name(record_name) :
-    for  k  in schema_dict.keys()  :
+    for k in schema_dict.keys()  :
         if k == record_name :
             return True
     else :
@@ -218,6 +216,7 @@ def check_for_dup_record_name(record_name) :
 # Notes    :
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 def store_att_name(record_name,attname) :
+     global schema_dict
      schema_dict[record_name].extend([attname])
 
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -240,67 +239,142 @@ def check_for_dup_att_name(record_name, attname):
 # Notes    :
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 def infer_schema() :
-    for k,v in  json_dict.items() :    
-        #
-        if ( (str(type(v))).find("'list'")  != -1 ) :
-            process_list_value (k,v)
-        #
-        elif ( (str(type(v))).find("'dict'")  != -1 ) :
-            process_dict_value (k, v)
+     #
+     for k,v in work_schema_dict.items() :    
+     
+          if ( (str(type(v))).find("'list'")  != -1 ) :
+               flatten_list_values (k,v)
+        
+          elif ( (str(type(v))).find("'dict'")  != -1 ) :
+               flatten_dict_values (k, v)
 
 #+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-# Name     :print_schema
-# Overview :The function is used to print the schema that is stored in the dictionary.
+# Name     :print_schema_to_stdout
+# Overview :The function is used to print the schema that is stored in the dictionary 
+#           to the stdout.
 # Notes    :
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-def print_schema() :
+def print_schema_to_stdout() :
+     #
+     # print analysed file names
+     #
+     file_no=1
+     ts = dt.now().strftime("%d/%m/%Y at %H:%M:%S")
+     print(f"                          Schema Generated on {ts}\n")
+     print("List of Files Analysed")
+     print("======================")
+     for fname in lof :
+          print(f"{file_no}.{fname}")
+          file_no += 1 
+     print("\n")
+     #
+     #print records types
+     #
+     att_no = 1
+     print("List of Record Types")
+     print("====================")
+     for k in schema_dict.keys() :
+          print(f"{att_no}.{k}")
+          att_no +=1
+     print("\n\n")
+     #
      att_no = 1
      for  k, v in schema_dict.items() :
-           print(f"Record Name={k}")
-           print("\n")
-           print("List of Attributes")
-           print("==================")
-           for att in v :
+          print(f"Record Type={k}")
+          print("\n")
+          print("List of Attributes")
+          print("==================")
+          for att in v :
                print(f"{att_no}.{att}")
                att_no +=1
-           print("\n")
-           att_no=1
+          print("\n")
+          att_no=1
     
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# Name     :print_schema_to_file
+# Overview :The function is used to print the schema that is stored in the dictionary 
+#           to the file.
+# Notes    :
+#++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+def print_schema_to_file() :
+     #
+     #
+     fname = "schema.dat"
+     #
+     with open(fname, "w") as fh :
+          #
+          #print records types
+          #
+          file_no=1
+          ts = dt.now().strftime("%d/%m/%Y at %H:%M:%S")
+          fh.write(f"                          Schema Generated on {ts}\n")
+          fh.write("List of Files Analysed\n")
+          fh.write("======================\n")
+          for fname in lof :
+               fh.write(f"{file_no}.{fname}\n")
+               file_no += 1 
+          fh.write("\n")
+          #
+          att_no = 1
+          fh.write("List of Record Types\n")
+          fh.write("====================\n")
+          for k in schema_dict.keys() :
+               fh.write(f"{att_no}.{k}\n")
+               att_no +=1
+          fh.write("\n\n")
+          #
+          att_no = 1
+          for  k, v in schema_dict.items() :
+               fh.write(f"Record Type={k}\n")
+               fh.write("\n")
+               fh.write("List of Attributes\n")
+               fh.write("==================\n")
+               for att in v :
+                    fh.write(f"{att_no}.{att}\n")
+                    att_no +=1
 #+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # Name     : main 
 # Overview : The function is used to implement control structure.
 # Notes    :
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 def main () :
-     #
-     global json_file
-     global  lort # list of record type
-     global  loa  # list of attributes
-     lort=[]
-     loa=[]
-     global schema_dict
-     schema_dict = {}
-     global key_sequence
-     key_sequence = 0
-     global cur_record_name
-     cur_record_name=""
-     global ignore_att
-     ignore_att =False
-     #
-     #
-     if len( sys.argv ) != 2    :
-          print("Usage : python jsg.py <json file>")
-          sys.exit(1)
+     try :
 
-     else:
-          json_file=sys.argv[1]
-     #
-     if not load_json_file ()  :
-          sys.exit(1)
-     #
-     infer_schema()
-     #
-     print_schema()
+          global lof
+          global schema_dict
+          schema_dict = {}
+
+          global key_sequence
+          key_sequence = 0
+
+          global cur_record_name
+          cur_record_name=""
+
+          global ignore_att
+          ignore_att =False
+          
+          global rec_locator
+          # use this key segment to identify new record 
+          rec_locator="entry-resource-resourceType"  
+          global att_locator
+          # use this key segment to identify attribute
+          att_locator="entry-resource-"
+
+          if len( sys.argv ) != 2    :
+               print("Usage : python infer_json_schema.py <json file dir path>")
+               sys.exit(1)
+          
+          json_file_dir_path=sys.argv[1]
+          lof=[ ( json_file_dir_path + "/" + fname) for fname in os.listdir(json_file_dir_path) if "json" in  fname.split(".")  ]
+          for fname in lof :
+               load_json_file (fname) 
+               infer_schema()
+          
+          print_schema_to_stdout()
+          print_schema_to_file()
+
+     except Exception as e :
+          traceback.print_exc()
     
 #+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
-main ()
+main()
