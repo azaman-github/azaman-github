@@ -336,6 +336,7 @@ def main () :
     The function is used to implement control structure.
     '''
     global lof
+    global schema_dict
     try:
  
         logging.root.name = LOGIN
@@ -356,7 +357,6 @@ def main () :
             load_json_file (fname) 
             infer_schema()
 
-        print_schema_to_file()
 
         logging.info(f"Module-{MODULE_NAME} Execution Completed")
 
