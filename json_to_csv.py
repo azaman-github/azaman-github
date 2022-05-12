@@ -1,6 +1,5 @@
 '''
 The module is used to create csv files from json data files.
-
 '''
 #
 # Name        : json_to_csv.py
