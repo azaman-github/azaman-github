@@ -28,7 +28,6 @@ from openpyxl import Workbook
 #
 # module constant
 #
-#EXCEL_WB_NAME = f"{dir_path}/emis_patient_data.xlsx"
 LOGIN = os.getlogin()
 LOGFILE = "./log/elv.log"
 MODULE_NAME = sys.argv[0]
