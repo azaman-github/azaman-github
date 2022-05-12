@@ -1,0 +1,1536 @@
+          Flattened Attribute Count for Record types for Individual File
+          ==============================================================
+          File=./json_dir/Kayce253_Johns824_b0bccf43-3bf5-217c-7315-9e44d106bb6b.json
+
+
+Record Type=CarePlan Attribute Count=22
+Record Type=CareTeam Attribute Count=26
+Record Type=Claim Attribute Count=25
+Record Type=Condition Attribute Count=17
+Record Type=DiagnosticReport Attribute Count=23
+Record Type=DocumentReference Attribute Count=28
+Record Type=Encounter Attribute Count=31
+Record Type=ExplanationOfBenefit Attribute Count=63
+Record Type=Immunization Attribute Count=13
+Record Type=MedicationRequest Attribute Count=16
+Record Type=Observation Attribute Count=19
+Record Type=Patient Attribute Count=87
+Record Type=Procedure Attribute Count=13
+Record Type=Provenance Attribute Count=840
+
+
+          File=./json_dir/Mariano761_Patiño436_4878889a-9b4f-22fc-7060-ed9f5c05940c.json
+
+
+Record Type=Claim Attribute Count=45
+Record Type=Condition Attribute Count=18
+Record Type=DiagnosticReport Attribute Count=23
+Record Type=DocumentReference Attribute Count=28
+Record Type=Encounter Attribute Count=31
+Record Type=ExplanationOfBenefit Attribute Count=124
+Record Type=Immunization Attribute Count=13
+Record Type=MedicationRequest Attribute Count=16
+Record Type=Observation Attribute Count=22
+Record Type=Patient Attribute Count=70
+Record Type=Procedure Attribute Count=15
+Record Type=Provenance Attribute Count=326
+
+
+          File=./json_dir/Lesley194_Ebert178_6f1df156-8793-56a0-6df1-570bca4dcc07.json
+
+
+Record Type=CarePlan Attribute Count=30
+Record Type=CareTeam Attribute Count=31
+Record Type=Claim Attribute Count=49
+Record Type=Condition Attribute Count=18
+Record Type=DiagnosticReport Attribute Count=38
+Record Type=DocumentReference Attribute Count=28
+Record Type=Encounter Attribute Count=28
+Record Type=ExplanationOfBenefit Attribute Count=150
+Record Type=Immunization Attribute Count=13
+Record Type=MedicationRequest Attribute Count=14
+Record Type=Observation Attribute Count=19
+Record Type=Patient Attribute Count=70
+Record Type=Procedure Attribute Count=13
+Record Type=Provenance Attribute Count=136
+
+
+          File=./json_dir/Harland508_Hintz995_a57f2290-27ed-6117-2989-f42ef6d291ab.json
+
+
+Record Type=CarePlan Attribute Count=22
+Record Type=CareTeam Attribute Count=26
+Record Type=Claim Attribute Count=27
+Record Type=Condition Attribute Count=17
+Record Type=DiagnosticReport Attribute Count=23
+Record Type=DocumentReference Attribute Count=28
+Record Type=Encounter Attribute Count=28
+Record Type=ExplanationOfBenefit Attribute Count=63
+Record Type=Immunization Attribute Count=13
+Record Type=MedicationRequest Attribute Count=13
+Record Type=Observation Attribute Count=19
+Record Type=Patient Attribute Count=84
+Record Type=Procedure Attribute Count=15
+Record Type=Provenance Attribute Count=842
+
+
+          File=./json_dir/Hans694_Fritsch593_9ce2b3c9-0f19-e01b-d789-5cb0609583e6.json
+
+
+Record Type=CarePlan Attribute Count=30
+Record Type=CareTeam Attribute Count=31
+Record Type=Claim Attribute Count=49
+Record Type=Condition Attribute Count=18
+Record Type=DiagnosticReport Attribute Count=23
+Record Type=DocumentReference Attribute Count=28
+Record Type=Encounter Attribute Count=28
+Record Type=ExplanationOfBenefit Attribute Count=150
+Record Type=Immunization Attribute Count=13
+Record Type=MedicationRequest Attribute Count=14
+Record Type=Observation Attribute Count=19
+Record Type=Patient Attribute Count=77
+Record Type=Procedure Attribute Count=13
+Record Type=Provenance Attribute Count=285
+
+
+          File=./json_dir/Leslie90_Weissnat378_a8e9746e-f807-bbb1-bdc1-83ade842694d.json
+
+
+Record Type=CarePlan Attribute Count=29
+Record Type=CareTeam Attribute Count=30
+Record Type=Claim Attribute Count=35
+Record Type=Condition Attribute Count=17
+Record Type=DiagnosticReport Attribute Count=23
+Record Type=DocumentReference Attribute Count=28
+Record Type=Encounter Attribute Count=31
+Record Type=ExplanationOfBenefit Attribute Count=81
+Record Type=Immunization Attribute Count=13
+Record Type=MedicationRequest Attribute Count=13
+Record Type=Observation Attribute Count=19
+Record Type=Patient Attribute Count=88
+Record Type=Procedure Attribute Count=13
+Record Type=Provenance Attribute Count=705
+
+
+          File=./json_dir/Bill567_Breitenberg711_1029f880-d3db-f477-9da3-f59c14ed22c6.json
+
+
+Record Type=CarePlan Attribute Count=30
+Record Type=CareTeam Attribute Count=31
+Record Type=Claim Attribute Count=35
+Record Type=Condition Attribute Count=18
+Record Type=DiagnosticReport Attribute Count=23
+Record Type=DocumentReference Attribute Count=28
+Record Type=Encounter Attribute Count=28
+Record Type=ExplanationOfBenefit Attribute Count=81
+Record Type=Immunization Attribute Count=13
+Record Type=MedicationRequest Attribute Count=14
+Record Type=Observation Attribute Count=19
+Record Type=Patient Attribute Count=84
+Record Type=Procedure Attribute Count=13
+Record Type=Provenance Attribute Count=253
+
+
+          File=./json_dir/Hans694_Fahey393_3635f0e6-d517-43f9-c4b2-61ea16a60fa3.json
+
+
+Record Type=CarePlan Attribute Count=29
+Record Type=CareTeam Attribute Count=30
+Record Type=Claim Attribute Count=43
+Record Type=Condition Attribute Count=17
+Record Type=DiagnosticReport Attribute Count=23
+Record Type=DocumentReference Attribute Count=28
+Record Type=Encounter Attribute Count=28
+Record Type=ExplanationOfBenefit Attribute Count=99
+Record Type=Immunization Attribute Count=13
+Record Type=MedicationRequest Attribute Count=23
+Record Type=Observation Attribute Count=19
+Record Type=Patient Attribute Count=83
+Record Type=Procedure Attribute Count=13
+Record Type=Provenance Attribute Count=525
+
+
+          File=./json_dir/Everette494_Jerde200_7b3071eb-aacb-0596-d7b5-4abcb83ac2f0.json
+
+
+Record Type=CarePlan Attribute Count=29
+Record Type=CareTeam Attribute Count=30
+Record Type=Claim Attribute Count=35
+Record Type=Condition Attribute Count=18
+Record Type=DiagnosticReport Attribute Count=23
+Record Type=DocumentReference Attribute Count=28
+Record Type=Encounter Attribute Count=28
+Record Type=ExplanationOfBenefit Attribute Count=81
+Record Type=Immunization Attribute Count=13
+Record Type=MedicationRequest Attribute Count=16
+Record Type=Observation Attribute Count=19
+Record Type=Patient Attribute Count=83
+Record Type=Procedure Attribute Count=13
+Record Type=Provenance Attribute Count=390
+
+
+          File=./json_dir/Aaron697_Jerde200_6fa23508-960e-ff22-c3d0-0519a036543b.json
+
+
+Record Type=AllergyIntolerance Attribute Count=15
+Record Type=CarePlan Attribute Count=34
+Record Type=CareTeam Attribute Count=26
+Record Type=Claim Attribute Count=27
+Record Type=Condition Attribute Count=18
+Record Type=DiagnosticReport Attribute Count=23
+Record Type=DocumentReference Attribute Count=28
+Record Type=Encounter Attribute Count=28
+Record Type=ExplanationOfBenefit Attribute Count=63
+Record Type=Immunization Attribute Count=13
+Record Type=MedicationRequest Attribute Count=16
+Record Type=Observation Attribute Count=19
+Record Type=Patient Attribute Count=84
+Record Type=Procedure Attribute Count=13
+Record Type=Provenance Attribute Count=951
+
+
+          File=./json_dir/Bobbi508_Beer512_b8c71fe0-e911-205e-19c3-b92e88e5b5a6.json
+
+
+Record Type=AllergyIntolerance Attribute Count=20
+Record Type=CarePlan Attribute Count=34
+Record Type=CareTeam Attribute Count=26
+Record Type=Claim Attribute Count=27
+Record Type=Condition Attribute Count=17
+Record Type=DiagnosticReport Attribute Count=23
+Record Type=DocumentReference Attribute Count=28
+Record Type=Encounter Attribute Count=28
+Record Type=ExplanationOfBenefit Attribute Count=63
+Record Type=ImagingStudy Attribute Count=31
+Record Type=Immunization Attribute Count=13
+Record Type=MedicationRequest Attribute Count=16
+Record Type=Observation Attribute Count=17
+Record Type=Patient Attribute Count=87
+Record Type=Procedure Attribute Count=13
+Record Type=Provenance Attribute Count=1013
+
+
+          File=./json_dir/Chelsie189_Larson43_0f978b87-8054-e6d3-aa03-20e101ea37c0.json
+
+
+Record Type=AllergyIntolerance Attribute Count=25
+Record Type=CarePlan Attribute Count=34
+Record Type=CareTeam Attribute Count=26
+Record Type=Claim Attribute Count=27
+Record Type=Condition Attribute Count=17
+Record Type=DiagnosticReport Attribute Count=23
+Record Type=DocumentReference Attribute Count=28
+Record Type=Encounter Attribute Count=28
+Record Type=ExplanationOfBenefit Attribute Count=63
+Record Type=Immunization Attribute Count=13
+Record Type=MedicationRequest Attribute Count=16
+Record Type=Observation Attribute Count=19
+Record Type=Patient Attribute Count=87
+Record Type=Procedure Attribute Count=13
+Record Type=Provenance Attribute Count=713
+
+
+          File=./json_dir/Rubin812_Quigley282_ac56a3df-7399-e895-2a6e-6ae757f3f4a5.json
+
+
+Record Type=CarePlan Attribute Count=30
+Record Type=CareTeam Attribute Count=31
+Record Type=Claim Attribute Count=35
+Record Type=Condition Attribute Count=18
+Record Type=DiagnosticReport Attribute Count=23
+Record Type=DocumentReference Attribute Count=28
+Record Type=Encounter Attribute Count=31
+Record Type=ExplanationOfBenefit Attribute Count=81
+Record Type=Immunization Attribute Count=13
+Record Type=MedicationRequest Attribute Count=16
+Record Type=Observation Attribute Count=22
+Record Type=Patient Attribute Count=83
+Record Type=Procedure Attribute Count=13
+Record Type=Provenance Attribute Count=281
+
+
+          File=./json_dir/James276_Champlin946_4cef483d-6b1b-a284-b8fd-1de7f5aba0a4.json
+
+
+Record Type=CarePlan Attribute Count=29
+Record Type=CareTeam Attribute Count=31
+Record Type=Claim Attribute Count=27
+Record Type=Condition Attribute Count=17
+Record Type=Device Attribute Count=17
+Record Type=DiagnosticReport Attribute Count=23
+Record Type=DocumentReference Attribute Count=28
+Record Type=Encounter Attribute Count=28
+Record Type=ExplanationOfBenefit Attribute Count=63
+Record Type=Immunization Attribute Count=13
+Record Type=MedicationRequest Attribute Count=23
+Record Type=Observation Attribute Count=19
+Record Type=Patient Attribute Count=84
+Record Type=Procedure Attribute Count=15
+Record Type=Provenance Attribute Count=1517
+
+
+          File=./json_dir/Glen190_Glover433_3d496c42-21f9-8e42-aa2b-d021a1b79d46.json
+
+
+Record Type=Claim Attribute Count=35
+Record Type=Condition Attribute Count=18
+Record Type=DiagnosticReport Attribute Count=23
+Record Type=DocumentReference Attribute Count=28
+Record Type=Encounter Attribute Count=31
+Record Type=ExplanationOfBenefit Attribute Count=81
+Record Type=Immunization Attribute Count=13
+Record Type=MedicationRequest Attribute Count=27
+Record Type=Observation Attribute Count=19
+Record Type=Patient Attribute Count=83
+Record Type=Procedure Attribute Count=13
+Record Type=Provenance Attribute Count=233
+
+
+          File=./json_dir/Georgiana151_Jacobi462_e94401de-18ad-e190-9113-ee5ff31b1439.json
+
+
+Record Type=CarePlan Attribute Count=29
+Record Type=CareTeam Attribute Count=30
+Record Type=Claim Attribute Count=35
+Record Type=Condition Attribute Count=17
+Record Type=DiagnosticReport Attribute Count=23
+Record Type=DocumentReference Attribute Count=28
+Record Type=Encounter Attribute Count=28
+Record Type=ExplanationOfBenefit Attribute Count=81
+Record Type=Immunization Attribute Count=13
+Record Type=Medication Attribute Count=7
+Record Type=MedicationAdministration Attribute Count=9
+Record Type=MedicationRequest Attribute Count=23
+Record Type=Observation Attribute Count=19
+Record Type=Patient Attribute Count=88
+Record Type=Procedure Attribute Count=13
+Record Type=Provenance Attribute Count=2697
+Record Type=SupplyDelivery Attribute Count=12
+
+
+          File=./json_dir/Ruthie901_Mills423_c8c2969a-32d7-9694-ce15-378ae4d66413.json
+
+
+Record Type=CarePlan Attribute Count=29
+Record Type=CareTeam Attribute Count=31
+Record Type=Claim Attribute Count=27
+Record Type=Condition Attribute Count=17
+Record Type=DiagnosticReport Attribute Count=23
+Record Type=DocumentReference Attribute Count=28
+Record Type=Encounter Attribute Count=28
+Record Type=ExplanationOfBenefit Attribute Count=63
+Record Type=Immunization Attribute Count=13
+Record Type=MedicationRequest Attribute Count=16
+Record Type=Observation Attribute Count=19
+Record Type=Patient Attribute Count=87
+Record Type=Procedure Attribute Count=13
+Record Type=Provenance Attribute Count=526
+
+
+          File=./json_dir/Gonzalo160_Bañuelos542_720d476c-6392-bc86-3640-bf2ee18d071a.json
+
+
+Record Type=CarePlan Attribute Count=29
+Record Type=CareTeam Attribute Count=30
+Record Type=Claim Attribute Count=51
+Record Type=Condition Attribute Count=17
+Record Type=DiagnosticReport Attribute Count=23
+Record Type=DocumentReference Attribute Count=28
+Record Type=Encounter Attribute Count=28
+Record Type=ExplanationOfBenefit Attribute Count=117
+Record Type=Immunization Attribute Count=13
+Record Type=MedicationRequest Attribute Count=13
+Record Type=Observation Attribute Count=19
+Record Type=Patient Attribute Count=85
+Record Type=Procedure Attribute Count=13
+Record Type=Provenance Attribute Count=704
+
+
+          File=./json_dir/Everett935_Littel644_8a3247d3-a54c-43f2-2c5d-a8f5e28ff588.json
+
+
+Record Type=CarePlan Attribute Count=29
+Record Type=CareTeam Attribute Count=30
+Record Type=Claim Attribute Count=43
+Record Type=Condition Attribute Count=17
+Record Type=DiagnosticReport Attribute Count=23
+Record Type=DocumentReference Attribute Count=28
+Record Type=Encounter Attribute Count=35
+Record Type=ExplanationOfBenefit Attribute Count=99
+Record Type=Immunization Attribute Count=13
+Record Type=MedicationRequest Attribute Count=14
+Record Type=Observation Attribute Count=19
+Record Type=Patient Attribute Count=84
+Record Type=Procedure Attribute Count=13
+Record Type=Provenance Attribute Count=650
+
+
+          File=./json_dir/Marianna323_Champlin946_f8c09661-fcd1-eeea-d61e-478109235532.json
+
+
+Record Type=CarePlan Attribute Count=29
+Record Type=CareTeam Attribute Count=30
+Record Type=Claim Attribute Count=43
+Record Type=Condition Attribute Count=17
+Record Type=DiagnosticReport Attribute Count=23
+Record Type=DocumentReference Attribute Count=28
+Record Type=Encounter Attribute Count=28
+Record Type=ExplanationOfBenefit Attribute Count=99
+Record Type=Immunization Attribute Count=13
+Record Type=MedicationRequest Attribute Count=13
+Record Type=Observation Attribute Count=19
+Record Type=Patient Attribute Count=88
+Record Type=Procedure Attribute Count=13
+Record Type=Provenance Attribute Count=513
+
+
+          File=./json_dir/Chase54_Klocko335_b0478b4f-16f2-af38-d199-44db19304df2.json
+
+
+Record Type=CarePlan Attribute Count=28
+Record Type=CareTeam Attribute Count=26
+Record Type=Claim Attribute Count=43
+Record Type=Condition Attribute Count=17
+Record Type=DiagnosticReport Attribute Count=23
+Record Type=DocumentReference Attribute Count=28
+Record Type=Encounter Attribute Count=35
+Record Type=ExplanationOfBenefit Attribute Count=99
+Record Type=Immunization Attribute Count=13
+Record Type=MedicationRequest Attribute Count=14
+Record Type=Observation Attribute Count=19
+Record Type=Patient Attribute Count=83
+Record Type=Procedure Attribute Count=13
+Record Type=Provenance Attribute Count=254
+
+
+          File=./json_dir/Jan231_Weber641_fae4f7e3-622f-290c-068f-6d03e71dd5c9.json
+
+
+Record Type=CarePlan Attribute Count=30
+Record Type=CareTeam Attribute Count=31
+Record Type=Claim Attribute Count=89
+Record Type=Condition Attribute Count=17
+Record Type=DiagnosticReport Attribute Count=18
+Record Type=DocumentReference Attribute Count=28
+Record Type=Encounter Attribute Count=28
+Record Type=ExplanationOfBenefit Attribute Count=322
+Record Type=Immunization Attribute Count=13
+Record Type=MedicationRequest Attribute Count=13
+Record Type=Observation Attribute Count=19
+Record Type=Patient Attribute Count=84
+Record Type=Procedure Attribute Count=13
+Record Type=Provenance Attribute Count=723
+
+
+          File=./json_dir/Jan231_Tillman293_2a0033b8-bd24-be26-eb24-8d6d9616b74f.json
+
+
+Record Type=AllergyIntolerance Attribute Count=15
+Record Type=CarePlan Attribute Count=34
+Record Type=CareTeam Attribute Count=26
+Record Type=Claim Attribute Count=27
+Record Type=Condition Attribute Count=17
+Record Type=DiagnosticReport Attribute Count=23
+Record Type=DocumentReference Attribute Count=28
+Record Type=Encounter Attribute Count=28
+Record Type=ExplanationOfBenefit Attribute Count=63
+Record Type=Immunization Attribute Count=13
+Record Type=MedicationRequest Attribute Count=16
+Record Type=Observation Attribute Count=19
+Record Type=Patient Attribute Count=90
+Record Type=Procedure Attribute Count=15
+Record Type=Provenance Attribute Count=719
+
+
+          File=./json_dir/Hans694_Littel644_e7ffd26a-48e5-f10e-5565-2f4e8b09ee45.json
+
+
+Record Type=AllergyIntolerance Attribute Count=30
+Record Type=CarePlan Attribute Count=34
+Record Type=CareTeam Attribute Count=26
+Record Type=Claim Attribute Count=27
+Record Type=Condition Attribute Count=17
+Record Type=DiagnosticReport Attribute Count=23
+Record Type=DocumentReference Attribute Count=28
+Record Type=Encounter Attribute Count=28
+Record Type=ExplanationOfBenefit Attribute Count=63
+Record Type=Immunization Attribute Count=13
+Record Type=MedicationRequest Attribute Count=13
+Record Type=Observation Attribute Count=18
+Record Type=Patient Attribute Count=84
+Record Type=Procedure Attribute Count=13
+Record Type=Provenance Attribute Count=956
+
+
+          File=./json_dir/Luanne915_Predovic534_d3406315-0e5e-e5e3-da71-b3c9802bd004.json
+
+
+Record Type=CarePlan Attribute Count=36
+Record Type=CareTeam Attribute Count=31
+Record Type=Claim Attribute Count=35
+Record Type=Condition Attribute Count=17
+Record Type=DiagnosticReport Attribute Count=23
+Record Type=DocumentReference Attribute Count=28
+Record Type=Encounter Attribute Count=31
+Record Type=ExplanationOfBenefit Attribute Count=81
+Record Type=Immunization Attribute Count=13
+Record Type=MedicationRequest Attribute Count=14
+Record Type=Observation Attribute Count=19
+Record Type=Patient Attribute Count=88
+Record Type=Procedure Attribute Count=15
+Record Type=Provenance Attribute Count=871
+
+
+          File=./json_dir/Kayce253_Gislason620_37905eb6-a01d-0e34-a274-27ada76d3ccc.json
+
+
+Record Type=AllergyIntolerance Attribute Count=15
+Record Type=CarePlan Attribute Count=30
+Record Type=CareTeam Attribute Count=31
+Record Type=Claim Attribute Count=85
+Record Type=Condition Attribute Count=18
+Record Type=DiagnosticReport Attribute Count=18
+Record Type=DocumentReference Attribute Count=28
+Record Type=Encounter Attribute Count=28
+Record Type=ExplanationOfBenefit Attribute Count=296
+Record Type=Immunization Attribute Count=13
+Record Type=Medication Attribute Count=7
+Record Type=MedicationAdministration Attribute Count=10
+Record Type=MedicationRequest Attribute Count=14
+Record Type=Observation Attribute Count=19
+Record Type=Patient Attribute Count=85
+Record Type=Procedure Attribute Count=13
+Record Type=Provenance Attribute Count=581
+
+
+          File=./json_dir/Luciano237_Turcotte120_4f0dc4bc-9ada-c8dd-31dc-ffcfbe80e186.json
+
+
+Record Type=CarePlan Attribute Count=41
+Record Type=CareTeam Attribute Count=30
+Record Type=Claim Attribute Count=25
+Record Type=Condition Attribute Count=17
+Record Type=DiagnosticReport Attribute Count=23
+Record Type=DocumentReference Attribute Count=28
+Record Type=Encounter Attribute Count=28
+Record Type=ExplanationOfBenefit Attribute Count=135
+Record Type=Immunization Attribute Count=13
+Record Type=MedicationRequest Attribute Count=23
+Record Type=Observation Attribute Count=17
+Record Type=Patient Attribute Count=85
+Record Type=Procedure Attribute Count=15
+Record Type=Provenance Attribute Count=535
+
+
+          File=./json_dir/Giuseppe872_Haley279_0d7ad451-ac1b-dc0e-48bd-e0a8e1de4f15.json
+
+
+Record Type=CarePlan Attribute Count=29
+Record Type=CareTeam Attribute Count=30
+Record Type=Claim Attribute Count=43
+Record Type=Condition Attribute Count=17
+Record Type=Device Attribute Count=17
+Record Type=DiagnosticReport Attribute Count=23
+Record Type=DocumentReference Attribute Count=28
+Record Type=Encounter Attribute Count=28
+Record Type=ExplanationOfBenefit Attribute Count=99
+Record Type=ImagingStudy Attribute Count=31
+Record Type=Immunization Attribute Count=13
+Record Type=MedicationRequest Attribute Count=17
+Record Type=Observation Attribute Count=19
+Record Type=Patient Attribute Count=85
+Record Type=Procedure Attribute Count=13
+Record Type=Provenance Attribute Count=962
+
+
+          File=./json_dir/Les282_Fritsch593_aad9d04b-bb30-2f47-d5dd-888b3b7bd831.json
+
+
+Record Type=CarePlan Attribute Count=30
+Record Type=CareTeam Attribute Count=31
+Record Type=Claim Attribute Count=59
+Record Type=Condition Attribute Count=17
+Record Type=DiagnosticReport Attribute Count=23
+Record Type=DocumentReference Attribute Count=28
+Record Type=Encounter Attribute Count=28
+Record Type=ExplanationOfBenefit Attribute Count=135
+Record Type=ImagingStudy Attribute Count=31
+Record Type=Immunization Attribute Count=13
+Record Type=Medication Attribute Count=7
+Record Type=MedicationAdministration Attribute Count=10
+Record Type=MedicationRequest Attribute Count=14
+Record Type=Observation Attribute Count=19
+Record Type=Patient Attribute Count=84
+Record Type=Procedure Attribute Count=13
+Record Type=Provenance Attribute Count=616
+
+
+          File=./json_dir/Evon528_Hayes766_ac00ac90-9af7-5b4f-aca4-8b1b9990fc1a.json
+
+
+Record Type=AllergyIntolerance Attribute Count=15
+Record Type=CarePlan Attribute Count=34
+Record Type=CareTeam Attribute Count=26
+Record Type=Claim Attribute Count=27
+Record Type=Condition Attribute Count=18
+Record Type=DiagnosticReport Attribute Count=23
+Record Type=DocumentReference Attribute Count=28
+Record Type=Encounter Attribute Count=28
+Record Type=ExplanationOfBenefit Attribute Count=63
+Record Type=Immunization Attribute Count=13
+Record Type=MedicationRequest Attribute Count=16
+Record Type=Observation Attribute Count=19
+Record Type=Patient Attribute Count=84
+Record Type=Procedure Attribute Count=13
+Record Type=Provenance Attribute Count=1057
+
+
+          File=./json_dir/Genevive999_Crist667_6dcdc387-88f9-758d-260c-4235ac7c269f.json
+
+
+Record Type=AllergyIntolerance Attribute Count=20
+Record Type=CarePlan Attribute Count=34
+Record Type=CareTeam Attribute Count=26
+Record Type=Claim Attribute Count=27
+Record Type=Condition Attribute Count=17
+Record Type=DiagnosticReport Attribute Count=23
+Record Type=DocumentReference Attribute Count=28
+Record Type=Encounter Attribute Count=28
+Record Type=ExplanationOfBenefit Attribute Count=63
+Record Type=Immunization Attribute Count=13
+Record Type=Medication Attribute Count=7
+Record Type=MedicationAdministration Attribute Count=10
+Record Type=MedicationRequest Attribute Count=13
+Record Type=Observation Attribute Count=19
+Record Type=Patient Attribute Count=87
+Record Type=Procedure Attribute Count=13
+Record Type=Provenance Attribute Count=927
+
+
+          File=./json_dir/Delfina519_Murphy561_cf3ce382-cceb-1557-89ac-b751a9e0e65d.json
+
+
+Record Type=CarePlan Attribute Count=41
+Record Type=CareTeam Attribute Count=30
+Record Type=Claim Attribute Count=25
+Record Type=Condition Attribute Count=17
+Record Type=DiagnosticReport Attribute Count=23
+Record Type=DocumentReference Attribute Count=28
+Record Type=Encounter Attribute Count=28
+Record Type=ExplanationOfBenefit Attribute Count=135
+Record Type=Immunization Attribute Count=13
+Record Type=MedicationRequest Attribute Count=23
+Record Type=Observation Attribute Count=18
+Record Type=Patient Attribute Count=87
+Record Type=Procedure Attribute Count=13
+Record Type=Provenance Attribute Count=1453
+
+
+          File=./json_dir/Maria750_Hessel84_a5ad8c5e-69af-ffe9-4de1-6e099852ff7d.json
+
+
+Record Type=CarePlan Attribute Count=30
+Record Type=CareTeam Attribute Count=31
+Record Type=Claim Attribute Count=25
+Record Type=Condition Attribute Count=18
+Record Type=DiagnosticReport Attribute Count=23
+Record Type=DocumentReference Attribute Count=28
+Record Type=Encounter Attribute Count=28
+Record Type=ExplanationOfBenefit Attribute Count=124
+Record Type=ImagingStudy Attribute Count=31
+Record Type=Immunization Attribute Count=13
+Record Type=MedicationRequest Attribute Count=16
+Record Type=Observation Attribute Count=19
+Record Type=Patient Attribute Count=78
+Record Type=Procedure Attribute Count=15
+Record Type=Provenance Attribute Count=281
+
+
+          File=./json_dir/Hank686_Ritchie586_35b42dc6-fcb1-4a74-1d90-4213afe5b285.json
+
+
+Record Type=Claim Attribute Count=49
+Record Type=Condition Attribute Count=18
+Record Type=DiagnosticReport Attribute Count=38
+Record Type=DocumentReference Attribute Count=28
+Record Type=Encounter Attribute Count=28
+Record Type=ExplanationOfBenefit Attribute Count=150
+Record Type=Immunization Attribute Count=13
+Record Type=MedicationRequest Attribute Count=27
+Record Type=Observation Attribute Count=19
+Record Type=Patient Attribute Count=71
+Record Type=Procedure Attribute Count=13
+Record Type=Provenance Attribute Count=351
+
+
+          File=./json_dir/Lesli455_Prohaska837_126a7e7a-958b-428b-907d-f2aa4fd7236b.json
+
+
+Record Type=CarePlan Attribute Count=41
+Record Type=CareTeam Attribute Count=30
+Record Type=Claim Attribute Count=35
+Record Type=Condition Attribute Count=17
+Record Type=DiagnosticReport Attribute Count=23
+Record Type=DocumentReference Attribute Count=28
+Record Type=Encounter Attribute Count=28
+Record Type=ExplanationOfBenefit Attribute Count=81
+Record Type=ImagingStudy Attribute Count=31
+Record Type=Immunization Attribute Count=13
+Record Type=MedicationRequest Attribute Count=23
+Record Type=Observation Attribute Count=19
+Record Type=Patient Attribute Count=88
+Record Type=Procedure Attribute Count=15
+Record Type=Provenance Attribute Count=1707
+
+
+          File=./json_dir/Loyd638_Hackett68_98ff843c-4be7-b0aa-cc4f-0462d049ecb8.json
+
+
+Record Type=CarePlan Attribute Count=30
+Record Type=CareTeam Attribute Count=31
+Record Type=Claim Attribute Count=39
+Record Type=Condition Attribute Count=18
+Record Type=DiagnosticReport Attribute Count=23
+Record Type=DocumentReference Attribute Count=28
+Record Type=Encounter Attribute Count=28
+Record Type=ExplanationOfBenefit Attribute Count=107
+Record Type=ImagingStudy Attribute Count=31
+Record Type=Immunization Attribute Count=13
+Record Type=MedicationRequest Attribute Count=16
+Record Type=Observation Attribute Count=19
+Record Type=Patient Attribute Count=78
+Record Type=Procedure Attribute Count=13
+Record Type=Provenance Attribute Count=456
+
+
+          File=./json_dir/Zane918_Schoen8_4995ca99-2ab9-3b18-a56e-c33d29e53af0.json
+
+
+Record Type=CarePlan Attribute Count=29
+Record Type=CareTeam Attribute Count=30
+Record Type=Claim Attribute Count=51
+Record Type=Condition Attribute Count=17
+Record Type=DiagnosticReport Attribute Count=23
+Record Type=DocumentReference Attribute Count=28
+Record Type=Encounter Attribute Count=28
+Record Type=ExplanationOfBenefit Attribute Count=117
+Record Type=Immunization Attribute Count=13
+Record Type=Observation Attribute Count=19
+Record Type=Patient Attribute Count=85
+Record Type=Procedure Attribute Count=13
+Record Type=Provenance Attribute Count=534
+
+
+          File=./json_dir/Deedra511_Wilkinson796_cced3031-d98c-d870-5dce-f0086d8c7a34.json
+
+
+Record Type=CarePlan Attribute Count=29
+Record Type=CareTeam Attribute Count=30
+Record Type=Claim Attribute Count=35
+Record Type=Condition Attribute Count=17
+Record Type=DiagnosticReport Attribute Count=23
+Record Type=DocumentReference Attribute Count=28
+Record Type=Encounter Attribute Count=28
+Record Type=ExplanationOfBenefit Attribute Count=81
+Record Type=Immunization Attribute Count=13
+Record Type=MedicationRequest Attribute Count=13
+Record Type=Observation Attribute Count=19
+Record Type=Patient Attribute Count=84
+Record Type=Procedure Attribute Count=13
+Record Type=Provenance Attribute Count=918
+
+
+          File=./json_dir/Abbey813_Price929_83524678-9bff-93b7-ef89-d7f5390072ff.json
+
+
+Record Type=CarePlan Attribute Count=41
+Record Type=CareTeam Attribute Count=30
+Record Type=Claim Attribute Count=43
+Record Type=Condition Attribute Count=17
+Record Type=Device Attribute Count=17
+Record Type=DiagnosticReport Attribute Count=23
+Record Type=DocumentReference Attribute Count=28
+Record Type=Encounter Attribute Count=28
+Record Type=ExplanationOfBenefit Attribute Count=99
+Record Type=Immunization Attribute Count=13
+Record Type=MedicationRequest Attribute Count=23
+Record Type=Observation Attribute Count=19
+Record Type=Patient Attribute Count=83
+Record Type=Procedure Attribute Count=13
+Record Type=Provenance Attribute Count=721
+
+
+          File=./json_dir/Luana867_Rath779_eb3007ac-5147-73e0-b6ad-20bbe8578a08.json
+
+
+Record Type=CarePlan Attribute Count=30
+Record Type=CareTeam Attribute Count=31
+Record Type=Claim Attribute Count=39
+Record Type=Condition Attribute Count=18
+Record Type=DiagnosticReport Attribute Count=38
+Record Type=DocumentReference Attribute Count=28
+Record Type=Encounter Attribute Count=28
+Record Type=ExplanationOfBenefit Attribute Count=107
+Record Type=Immunization Attribute Count=13
+Record Type=MedicationRequest Attribute Count=16
+Record Type=Observation Attribute Count=19
+Record Type=Patient Attribute Count=70
+Record Type=Procedure Attribute Count=13
+Record Type=Provenance Attribute Count=318
+
+
+          File=./json_dir/Chase54_Crooks415_e5b7d947-da2b-9cf4-12a0-9eb2cf735330.json
+
+
+Record Type=CarePlan Attribute Count=29
+Record Type=CareTeam Attribute Count=30
+Record Type=Claim Attribute Count=59
+Record Type=Condition Attribute Count=17
+Record Type=DiagnosticReport Attribute Count=23
+Record Type=DocumentReference Attribute Count=28
+Record Type=Encounter Attribute Count=28
+Record Type=ExplanationOfBenefit Attribute Count=135
+Record Type=Immunization Attribute Count=13
+Record Type=MedicationRequest Attribute Count=16
+Record Type=Observation Attribute Count=19
+Record Type=Patient Attribute Count=83
+Record Type=Procedure Attribute Count=13
+Record Type=Provenance Attribute Count=292
+
+
+          File=./json_dir/Marian936_Gleason633_c7eef66d-c5b9-f4da-bf58-550a8077ded6.json
+
+
+Record Type=Claim Attribute Count=35
+Record Type=Condition Attribute Count=17
+Record Type=DiagnosticReport Attribute Count=23
+Record Type=DocumentReference Attribute Count=28
+Record Type=Encounter Attribute Count=28
+Record Type=ExplanationOfBenefit Attribute Count=81
+Record Type=Immunization Attribute Count=13
+Record Type=Observation Attribute Count=19
+Record Type=Patient Attribute Count=88
+Record Type=Procedure Attribute Count=13
+Record Type=Provenance Attribute Count=171
+
+
+          File=./json_dir/Zachery872_Wyman904_37d57af4-d27f-fb97-9b5c-a1090f5a57b7.json
+
+
+Record Type=CarePlan Attribute Count=28
+Record Type=CareTeam Attribute Count=26
+Record Type=Claim Attribute Count=35
+Record Type=Condition Attribute Count=17
+Record Type=DiagnosticReport Attribute Count=23
+Record Type=DocumentReference Attribute Count=28
+Record Type=Encounter Attribute Count=28
+Record Type=ExplanationOfBenefit Attribute Count=81
+Record Type=Immunization Attribute Count=13
+Record Type=MedicationRequest Attribute Count=16
+Record Type=Observation Attribute Count=19
+Record Type=Patient Attribute Count=84
+Record Type=Procedure Attribute Count=13
+Record Type=Provenance Attribute Count=390
+
+
+          File=./json_dir/Sachiko982_Gulgowski816_89ba9a77-7aed-6cb8-6795-fb21f0ec237c.json
+
+
+Record Type=CarePlan Attribute Count=30
+Record Type=CareTeam Attribute Count=31
+Record Type=Claim Attribute Count=43
+Record Type=Condition Attribute Count=17
+Record Type=DiagnosticReport Attribute Count=23
+Record Type=DocumentReference Attribute Count=28
+Record Type=Encounter Attribute Count=28
+Record Type=ExplanationOfBenefit Attribute Count=99
+Record Type=Immunization Attribute Count=13
+Record Type=MedicationRequest Attribute Count=14
+Record Type=Observation Attribute Count=19
+Record Type=Patient Attribute Count=83
+Record Type=Procedure Attribute Count=13
+Record Type=Provenance Attribute Count=519
+
+
+          File=./json_dir/Jamey282_Hayes766_9c02362b-0a48-be5e-7296-e332e383ebd2.json
+
+
+Record Type=AllergyIntolerance Attribute Count=30
+Record Type=CarePlan Attribute Count=41
+Record Type=CareTeam Attribute Count=30
+Record Type=Claim Attribute Count=25
+Record Type=Condition Attribute Count=17
+Record Type=DiagnosticReport Attribute Count=23
+Record Type=DocumentReference Attribute Count=28
+Record Type=Encounter Attribute Count=28
+Record Type=ExplanationOfBenefit Attribute Count=135
+Record Type=Immunization Attribute Count=13
+Record Type=MedicationRequest Attribute Count=23
+Record Type=Observation Attribute Count=19
+Record Type=Patient Attribute Count=83
+Record Type=Procedure Attribute Count=13
+Record Type=Provenance Attribute Count=999
+
+
+          File=./json_dir/Blanch844_Kuhlman484_a18edb30-e93c-8e9b-8e6a-95a651a24a36.json
+
+
+Record Type=CarePlan Attribute Count=29
+Record Type=CareTeam Attribute Count=30
+Record Type=Claim Attribute Count=51
+Record Type=Condition Attribute Count=17
+Record Type=DiagnosticReport Attribute Count=23
+Record Type=DocumentReference Attribute Count=28
+Record Type=Encounter Attribute Count=28
+Record Type=ExplanationOfBenefit Attribute Count=117
+Record Type=Immunization Attribute Count=13
+Record Type=MedicationRequest Attribute Count=13
+Record Type=Observation Attribute Count=19
+Record Type=Patient Attribute Count=87
+Record Type=Procedure Attribute Count=13
+Record Type=Provenance Attribute Count=685
+
+
+          File=./json_dir/Aaron697_Dickens475_8c95253e-8ee8-9ae8-6d40-021d702dc78e.json
+
+
+Record Type=CarePlan Attribute Count=29
+Record Type=CareTeam Attribute Count=30
+Record Type=Claim Attribute Count=43
+Record Type=Condition Attribute Count=17
+Record Type=DiagnosticReport Attribute Count=23
+Record Type=DocumentReference Attribute Count=28
+Record Type=Encounter Attribute Count=28
+Record Type=ExplanationOfBenefit Attribute Count=99
+Record Type=ImagingStudy Attribute Count=31
+Record Type=Immunization Attribute Count=13
+Record Type=Medication Attribute Count=7
+Record Type=MedicationAdministration Attribute Count=10
+Record Type=MedicationRequest Attribute Count=17
+Record Type=Observation Attribute Count=19
+Record Type=Patient Attribute Count=84
+Record Type=Procedure Attribute Count=13
+Record Type=Provenance Attribute Count=637
+
+
+          File=./json_dir/Gus973_Windler79_09e292d4-f186-331c-ed95-c503acabc54e.json
+
+
+Record Type=CarePlan Attribute Count=30
+Record Type=CareTeam Attribute Count=31
+Record Type=Claim Attribute Count=37
+Record Type=Condition Attribute Count=18
+Record Type=DiagnosticReport Attribute Count=38
+Record Type=DocumentReference Attribute Count=28
+Record Type=Encounter Attribute Count=28
+Record Type=ExplanationOfBenefit Attribute Count=106
+Record Type=MedicationRequest Attribute Count=14
+Record Type=Observation Attribute Count=19
+Record Type=Patient Attribute Count=85
+Record Type=Procedure Attribute Count=13
+Record Type=Provenance Attribute Count=348
+
+
+          File=./json_dir/Georgianna701_Ledner144_e9200276-eb25-ac87-e3bf-31de7e8d0b1e.json
+
+
+Record Type=Claim Attribute Count=39
+Record Type=Condition Attribute Count=18
+Record Type=DiagnosticReport Attribute Count=38
+Record Type=DocumentReference Attribute Count=28
+Record Type=Encounter Attribute Count=28
+Record Type=ExplanationOfBenefit Attribute Count=107
+Record Type=Immunization Attribute Count=13
+Record Type=MedicationRequest Attribute Count=14
+Record Type=Observation Attribute Count=19
+Record Type=Patient Attribute Count=70
+Record Type=Procedure Attribute Count=13
+Record Type=Provenance Attribute Count=184
+
+
+          File=./json_dir/Leonardo412_Schuppe920_10bf6da8-ffa1-6913-a119-726634be754c.json
+
+
+Record Type=CarePlan Attribute Count=36
+Record Type=CareTeam Attribute Count=31
+Record Type=Claim Attribute Count=35
+Record Type=Condition Attribute Count=17
+Record Type=DiagnosticReport Attribute Count=23
+Record Type=DocumentReference Attribute Count=28
+Record Type=Encounter Attribute Count=28
+Record Type=ExplanationOfBenefit Attribute Count=81
+Record Type=Immunization Attribute Count=13
+Record Type=Medication Attribute Count=7
+Record Type=MedicationAdministration Attribute Count=9
+Record Type=MedicationRequest Attribute Count=14
+Record Type=Observation Attribute Count=19
+Record Type=Patient Attribute Count=83
+Record Type=Procedure Attribute Count=13
+Record Type=Provenance Attribute Count=1287
+Record Type=SupplyDelivery Attribute Count=12
+
+
+          File=./json_dir/Loyd638_Wiza601_0ae69ba4-c609-45cc-f172-d55bac5df41e.json
+
+
+Record Type=AllergyIntolerance Attribute Count=25
+Record Type=CarePlan Attribute Count=35
+Record Type=CareTeam Attribute Count=30
+Record Type=Claim Attribute Count=25
+Record Type=Condition Attribute Count=18
+Record Type=DiagnosticReport Attribute Count=23
+Record Type=DocumentReference Attribute Count=28
+Record Type=Encounter Attribute Count=31
+Record Type=ExplanationOfBenefit Attribute Count=81
+Record Type=Immunization Attribute Count=13
+Record Type=MedicationRequest Attribute Count=27
+Record Type=Observation Attribute Count=19
+Record Type=Patient Attribute Count=70
+Record Type=Procedure Attribute Count=15
+Record Type=Provenance Attribute Count=547
+
+
+          File=./json_dir/Jana258_Nikolaus26_9ebde11e-7248-e63c-25f9-4b793c3a5065.json
+
+
+Record Type=CarePlan Attribute Count=30
+Record Type=CareTeam Attribute Count=31
+Record Type=Claim Attribute Count=35
+Record Type=Condition Attribute Count=18
+Record Type=DiagnosticReport Attribute Count=23
+Record Type=DocumentReference Attribute Count=28
+Record Type=Encounter Attribute Count=28
+Record Type=ExplanationOfBenefit Attribute Count=81
+Record Type=Immunization Attribute Count=13
+Record Type=MedicationRequest Attribute Count=14
+Record Type=Observation Attribute Count=19
+Record Type=Patient Attribute Count=84
+Record Type=Procedure Attribute Count=13
+Record Type=Provenance Attribute Count=449
+
+
+          File=./json_dir/María_José279_Adorno791_aa4eae2c-733a-35f9-8869-d33a6015db23.json
+
+
+Record Type=AllergyIntolerance Attribute Count=20
+Record Type=CarePlan Attribute Count=22
+Record Type=CareTeam Attribute Count=26
+Record Type=Claim Attribute Count=43
+Record Type=Condition Attribute Count=17
+Record Type=DiagnosticReport Attribute Count=23
+Record Type=DocumentReference Attribute Count=28
+Record Type=Encounter Attribute Count=28
+Record Type=ExplanationOfBenefit Attribute Count=99
+Record Type=ImagingStudy Attribute Count=31
+Record Type=Immunization Attribute Count=13
+Record Type=MedicationRequest Attribute Count=16
+Record Type=Observation Attribute Count=19
+Record Type=Patient Attribute Count=88
+Record Type=Procedure Attribute Count=13
+Record Type=Provenance Attribute Count=3690
+
+
+          File=./json_dir/Bette450_Anderson154_6e4ac285-2a8d-a30d-5ecb-e32cb595a876.json
+
+
+Record Type=CarePlan Attribute Count=29
+Record Type=CareTeam Attribute Count=30
+Record Type=Claim Attribute Count=35
+Record Type=Condition Attribute Count=18
+Record Type=DiagnosticReport Attribute Count=23
+Record Type=DocumentReference Attribute Count=28
+Record Type=Encounter Attribute Count=28
+Record Type=ExplanationOfBenefit Attribute Count=81
+Record Type=Immunization Attribute Count=13
+Record Type=Medication Attribute Count=7
+Record Type=MedicationAdministration Attribute Count=10
+Record Type=MedicationRequest Attribute Count=11
+Record Type=Observation Attribute Count=19
+Record Type=Patient Attribute Count=87
+Record Type=Procedure Attribute Count=13
+Record Type=Provenance Attribute Count=579
+
+
+          File=./json_dir/Gilma310_Hahn503_0d55a582-07fe-a897-776c-3ab5e48cd457.json
+
+
+Record Type=CarePlan Attribute Count=29
+Record Type=CareTeam Attribute Count=30
+Record Type=Claim Attribute Count=43
+Record Type=Condition Attribute Count=17
+Record Type=DiagnosticReport Attribute Count=23
+Record Type=DocumentReference Attribute Count=28
+Record Type=Encounter Attribute Count=28
+Record Type=ExplanationOfBenefit Attribute Count=99
+Record Type=Immunization Attribute Count=13
+Record Type=MedicationRequest Attribute Count=23
+Record Type=Observation Attribute Count=19
+Record Type=Patient Attribute Count=84
+Record Type=Procedure Attribute Count=13
+Record Type=Provenance Attribute Count=7843
+
+
+          File=./json_dir/Delia459_Beier427_1ba50d39-8105-69de-09de-c6d5358b3cb6.json
+
+
+Record Type=CarePlan Attribute Count=29
+Record Type=CareTeam Attribute Count=31
+Record Type=Claim Attribute Count=27
+Record Type=Condition Attribute Count=17
+Record Type=DiagnosticReport Attribute Count=23
+Record Type=DocumentReference Attribute Count=28
+Record Type=Encounter Attribute Count=28
+Record Type=ExplanationOfBenefit Attribute Count=63
+Record Type=Immunization Attribute Count=13
+Record Type=MedicationRequest Attribute Count=14
+Record Type=Observation Attribute Count=19
+Record Type=Patient Attribute Count=88
+Record Type=Procedure Attribute Count=13
+Record Type=Provenance Attribute Count=296
+
+
+          File=./json_dir/Kelli207_Crooks415_5310622a-3368-34f0-c14a-b992c71e7d59.json
+
+
+Record Type=CarePlan Attribute Count=29
+Record Type=CareTeam Attribute Count=30
+Record Type=Claim Attribute Count=43
+Record Type=Condition Attribute Count=17
+Record Type=DiagnosticReport Attribute Count=23
+Record Type=DocumentReference Attribute Count=28
+Record Type=Encounter Attribute Count=28
+Record Type=ExplanationOfBenefit Attribute Count=99
+Record Type=Immunization Attribute Count=13
+Record Type=MedicationRequest Attribute Count=13
+Record Type=Observation Attribute Count=19
+Record Type=Patient Attribute Count=87
+Record Type=Procedure Attribute Count=13
+Record Type=Provenance Attribute Count=570
+
+
+          File=./json_dir/Rubi442_Labadie908_da6120a6-4557-7db3-b44c-43c38568c119.json
+
+
+Record Type=AllergyIntolerance Attribute Count=15
+Record Type=CarePlan Attribute Count=34
+Record Type=CareTeam Attribute Count=26
+Record Type=Claim Attribute Count=27
+Record Type=Condition Attribute Count=17
+Record Type=DiagnosticReport Attribute Count=23
+Record Type=DocumentReference Attribute Count=28
+Record Type=Encounter Attribute Count=28
+Record Type=ExplanationOfBenefit Attribute Count=63
+Record Type=Immunization Attribute Count=13
+Record Type=MedicationRequest Attribute Count=16
+Record Type=Observation Attribute Count=19
+Record Type=Patient Attribute Count=83
+Record Type=Procedure Attribute Count=13
+Record Type=Provenance Attribute Count=781
+
+
+          File=./json_dir/Cherie102_Reinger292_64cdd7b0-d5a5-ca8a-4b03-3db12d7534be.json
+
+
+Record Type=CarePlan Attribute Count=30
+Record Type=CareTeam Attribute Count=31
+Record Type=Claim Attribute Count=39
+Record Type=Condition Attribute Count=18
+Record Type=DiagnosticReport Attribute Count=38
+Record Type=DocumentReference Attribute Count=28
+Record Type=Encounter Attribute Count=28
+Record Type=ExplanationOfBenefit Attribute Count=107
+Record Type=Immunization Attribute Count=13
+Record Type=MedicationRequest Attribute Count=16
+Record Type=Observation Attribute Count=19
+Record Type=Patient Attribute Count=71
+Record Type=Procedure Attribute Count=13
+Record Type=Provenance Attribute Count=349
+
+
+          File=./json_dir/Leon728_Roberts511_67ae02d5-002b-6bba-1854-642eba13aa0f.json
+
+
+Record Type=CarePlan Attribute Count=36
+Record Type=CareTeam Attribute Count=31
+Record Type=Claim Attribute Count=51
+Record Type=Condition Attribute Count=17
+Record Type=DiagnosticReport Attribute Count=23
+Record Type=DocumentReference Attribute Count=28
+Record Type=Encounter Attribute Count=28
+Record Type=ExplanationOfBenefit Attribute Count=117
+Record Type=Immunization Attribute Count=13
+Record Type=MedicationRequest Attribute Count=13
+Record Type=Observation Attribute Count=19
+Record Type=Patient Attribute Count=88
+Record Type=Procedure Attribute Count=13
+Record Type=Provenance Attribute Count=487
+
+
+          File=./json_dir/Delbert384_Farrell962_91cf58f9-191c-3a49-a979-2ca64e52c369.json
+
+
+Record Type=CarePlan Attribute Count=41
+Record Type=CareTeam Attribute Count=30
+Record Type=Claim Attribute Count=35
+Record Type=Condition Attribute Count=17
+Record Type=DiagnosticReport Attribute Count=23
+Record Type=DocumentReference Attribute Count=28
+Record Type=Encounter Attribute Count=31
+Record Type=ExplanationOfBenefit Attribute Count=81
+Record Type=Immunization Attribute Count=13
+Record Type=MedicationRequest Attribute Count=23
+Record Type=Observation Attribute Count=19
+Record Type=Patient Attribute Count=83
+Record Type=Procedure Attribute Count=13
+Record Type=Provenance Attribute Count=747
+
+
+          File=./json_dir/Sandee884_Hodkiewicz467_15201e77-7e36-0667-73bc-013783e57649.json
+
+
+Record Type=CarePlan Attribute Count=22
+Record Type=CareTeam Attribute Count=26
+Record Type=Claim Attribute Count=25
+Record Type=Condition Attribute Count=17
+Record Type=DiagnosticReport Attribute Count=23
+Record Type=DocumentReference Attribute Count=28
+Record Type=Encounter Attribute Count=31
+Record Type=ExplanationOfBenefit Attribute Count=63
+Record Type=ImagingStudy Attribute Count=31
+Record Type=Immunization Attribute Count=13
+Record Type=MedicationRequest Attribute Count=16
+Record Type=Observation Attribute Count=18
+Record Type=Patient Attribute Count=88
+Record Type=Procedure Attribute Count=15
+Record Type=Provenance Attribute Count=1348
+
+
+          File=./json_dir/George991_Kassulke119_d8cb2b2b-fee1-36de-2e1e-0fda2ed1d991.json
+
+
+Record Type=CarePlan Attribute Count=41
+Record Type=CareTeam Attribute Count=30
+Record Type=Claim Attribute Count=35
+Record Type=Condition Attribute Count=18
+Record Type=Device Attribute Count=17
+Record Type=DiagnosticReport Attribute Count=23
+Record Type=DocumentReference Attribute Count=28
+Record Type=Encounter Attribute Count=28
+Record Type=ExplanationOfBenefit Attribute Count=81
+Record Type=Immunization Attribute Count=13
+Record Type=MedicationRequest Attribute Count=23
+Record Type=Observation Attribute Count=19
+Record Type=Patient Attribute Count=85
+Record Type=Procedure Attribute Count=15
+Record Type=Provenance Attribute Count=1352
+
+
+          File=./json_dir/Leonora414_Rogahn59_718f37a0-cb8f-fb74-03d3-c242033e7a81.json
+
+
+Record Type=Claim Attribute Count=49
+Record Type=Condition Attribute Count=17
+Record Type=DiagnosticReport Attribute Count=38
+Record Type=DocumentReference Attribute Count=28
+Record Type=Encounter Attribute Count=28
+Record Type=ExplanationOfBenefit Attribute Count=150
+Record Type=Immunization Attribute Count=13
+Record Type=MedicationRequest Attribute Count=16
+Record Type=Observation Attribute Count=19
+Record Type=Patient Attribute Count=71
+Record Type=Procedure Attribute Count=13
+Record Type=Provenance Attribute Count=144
+
+
+          File=./json_dir/Georgann131_Hansen121_839e7cf9-b7d6-da6c-70bb-c151bf5c1c61.json
+
+
+Record Type=CarePlan Attribute Count=41
+Record Type=CareTeam Attribute Count=30
+Record Type=Claim Attribute Count=25
+Record Type=Condition Attribute Count=17
+Record Type=DiagnosticReport Attribute Count=23
+Record Type=DocumentReference Attribute Count=28
+Record Type=Encounter Attribute Count=28
+Record Type=ExplanationOfBenefit Attribute Count=135
+Record Type=Immunization Attribute Count=13
+Record Type=MedicationRequest Attribute Count=23
+Record Type=Observation Attribute Count=19
+Record Type=Patient Attribute Count=88
+Record Type=Procedure Attribute Count=15
+Record Type=Provenance Attribute Count=950
+
+
+          File=./json_dir/Deena887_Fahey393_7c4e1f8e-29e4-f88f-095a-aa6a9f55e6de.json
+
+
+Record Type=CarePlan Attribute Count=28
+Record Type=CareTeam Attribute Count=26
+Record Type=Claim Attribute Count=27
+Record Type=Condition Attribute Count=17
+Record Type=DiagnosticReport Attribute Count=23
+Record Type=DocumentReference Attribute Count=28
+Record Type=Encounter Attribute Count=28
+Record Type=ExplanationOfBenefit Attribute Count=63
+Record Type=ImagingStudy Attribute Count=31
+Record Type=Immunization Attribute Count=13
+Record Type=Medication Attribute Count=7
+Record Type=MedicationAdministration Attribute Count=10
+Record Type=MedicationRequest Attribute Count=22
+Record Type=Observation Attribute Count=19
+Record Type=Patient Attribute Count=89
+Record Type=Procedure Attribute Count=13
+Record Type=Provenance Attribute Count=976
+
+
+          File=./json_dir/Russell422_Walker122_4a627a30-b963-bd1c-58be-0499f24d9670.json
+
+
+Record Type=Claim Attribute Count=35
+Record Type=Condition Attribute Count=17
+Record Type=DiagnosticReport Attribute Count=23
+Record Type=DocumentReference Attribute Count=28
+Record Type=Encounter Attribute Count=28
+Record Type=ExplanationOfBenefit Attribute Count=81
+Record Type=Immunization Attribute Count=13
+Record Type=Observation Attribute Count=19
+Record Type=Patient Attribute Count=84
+Record Type=Procedure Attribute Count=13
+Record Type=Provenance Attribute Count=423
+
+
+          File=./json_dir/Santiago500_Barton704_686e4b2e-1f8d-7018-c335-1604a300121b.json
+
+
+Record Type=AllergyIntolerance Attribute Count=15
+Record Type=CarePlan Attribute Count=34
+Record Type=CareTeam Attribute Count=26
+Record Type=Claim Attribute Count=27
+Record Type=Condition Attribute Count=17
+Record Type=DiagnosticReport Attribute Count=23
+Record Type=DocumentReference Attribute Count=28
+Record Type=Encounter Attribute Count=28
+Record Type=ExplanationOfBenefit Attribute Count=63
+Record Type=ImagingStudy Attribute Count=31
+Record Type=Immunization Attribute Count=13
+Record Type=MedicationRequest Attribute Count=16
+Record Type=Observation Attribute Count=19
+Record Type=Patient Attribute Count=83
+Record Type=Procedure Attribute Count=13
+Record Type=Provenance Attribute Count=680
+
+
+          File=./json_dir/Eveline832_Volkman526_bdb76eef-1faf-1ed7-d1ff-553d7df26fb3.json
+
+
+Record Type=CarePlan Attribute Count=29
+Record Type=CareTeam Attribute Count=30
+Record Type=Claim Attribute Count=35
+Record Type=Condition Attribute Count=17
+Record Type=DiagnosticReport Attribute Count=23
+Record Type=DocumentReference Attribute Count=28
+Record Type=Encounter Attribute Count=28
+Record Type=ExplanationOfBenefit Attribute Count=81
+Record Type=Immunization Attribute Count=13
+Record Type=MedicationRequest Attribute Count=14
+Record Type=Observation Attribute Count=19
+Record Type=Patient Attribute Count=83
+Record Type=Procedure Attribute Count=15
+Record Type=Provenance Attribute Count=546
+
+
+          File=./json_dir/Beth967_Hansen121_4e343b0a-8698-b6dd-64c6-c2d2d0959e6e.json
+
+
+Record Type=CarePlan Attribute Count=29
+Record Type=CareTeam Attribute Count=31
+Record Type=Claim Attribute Count=27
+Record Type=Condition Attribute Count=17
+Record Type=DiagnosticReport Attribute Count=23
+Record Type=DocumentReference Attribute Count=28
+Record Type=Encounter Attribute Count=28
+Record Type=ExplanationOfBenefit Attribute Count=63
+Record Type=ImagingStudy Attribute Count=31
+Record Type=Immunization Attribute Count=13
+Record Type=MedicationRequest Attribute Count=23
+Record Type=Observation Attribute Count=19
+Record Type=Patient Attribute Count=87
+Record Type=Procedure Attribute Count=13
+Record Type=Provenance Attribute Count=979
+
+
+          File=./json_dir/Kazuko67_Dibbert990_f8e9efe2-62db-29a2-46be-c72bad056ca8.json
+
+
+Record Type=CarePlan Attribute Count=35
+Record Type=CareTeam Attribute Count=30
+Record Type=Claim Attribute Count=35
+Record Type=Condition Attribute Count=17
+Record Type=DiagnosticReport Attribute Count=23
+Record Type=DocumentReference Attribute Count=28
+Record Type=Encounter Attribute Count=31
+Record Type=ExplanationOfBenefit Attribute Count=81
+Record Type=ImagingStudy Attribute Count=31
+Record Type=Immunization Attribute Count=13
+Record Type=MedicationRequest Attribute Count=13
+Record Type=Observation Attribute Count=19
+Record Type=Patient Attribute Count=87
+Record Type=Procedure Attribute Count=13
+Record Type=Provenance Attribute Count=847
+
+
+          File=./json_dir/Loyd638_Russel238_0ae2b985-af6e-485e-f0c5-fe0006c366e3.json
+
+
+Record Type=CarePlan Attribute Count=29
+Record Type=CareTeam Attribute Count=30
+Record Type=Claim Attribute Count=25
+Record Type=Condition Attribute Count=17
+Record Type=Device Attribute Count=17
+Record Type=DiagnosticReport Attribute Count=23
+Record Type=DocumentReference Attribute Count=28
+Record Type=Encounter Attribute Count=28
+Record Type=ExplanationOfBenefit Attribute Count=81
+Record Type=Immunization Attribute Count=13
+Record Type=MedicationRequest Attribute Count=13
+Record Type=Observation Attribute Count=18
+Record Type=Patient Attribute Count=84
+Record Type=Procedure Attribute Count=15
+Record Type=Provenance Attribute Count=1683
+
+
+          File=./json_dir/Bob965_Mohr916_f406a4e8-821b-0c9a-c8ec-09ad0f1fe9c6.json
+
+
+Record Type=CarePlan Attribute Count=30
+Record Type=CareTeam Attribute Count=31
+Record Type=Claim Attribute Count=59
+Record Type=Condition Attribute Count=17
+Record Type=DiagnosticReport Attribute Count=23
+Record Type=DocumentReference Attribute Count=28
+Record Type=Encounter Attribute Count=28
+Record Type=ExplanationOfBenefit Attribute Count=135
+Record Type=Immunization Attribute Count=13
+Record Type=MedicationRequest Attribute Count=14
+Record Type=Observation Attribute Count=19
+Record Type=Patient Attribute Count=84
+Record Type=Procedure Attribute Count=13
+Record Type=Provenance Attribute Count=187
+
+
+          File=./json_dir/Harold594_Grimes165_2d6c10cf-fade-6e45-0064-674792ff5ef1.json
+
+
+Record Type=CarePlan Attribute Count=28
+Record Type=CareTeam Attribute Count=26
+Record Type=Claim Attribute Count=27
+Record Type=Condition Attribute Count=17
+Record Type=DiagnosticReport Attribute Count=23
+Record Type=DocumentReference Attribute Count=28
+Record Type=Encounter Attribute Count=28
+Record Type=ExplanationOfBenefit Attribute Count=63
+Record Type=Immunization Attribute Count=13
+Record Type=MedicationRequest Attribute Count=14
+Record Type=Observation Attribute Count=19
+Record Type=Patient Attribute Count=84
+Record Type=Procedure Attribute Count=13
+Record Type=Provenance Attribute Count=814
+
+
+          File=./json_dir/Della552_Ratke343_b0f40536-9dc8-2ea0-0bbf-467a69f5e3ad.json
+
+
+Record Type=CarePlan Attribute Count=29
+Record Type=CareTeam Attribute Count=30
+Record Type=Claim Attribute Count=35
+Record Type=Condition Attribute Count=17
+Record Type=DiagnosticReport Attribute Count=23
+Record Type=DocumentReference Attribute Count=28
+Record Type=Encounter Attribute Count=28
+Record Type=ExplanationOfBenefit Attribute Count=81
+Record Type=Immunization Attribute Count=13
+Record Type=MedicationRequest Attribute Count=14
+Record Type=Observation Attribute Count=19
+Record Type=Patient Attribute Count=87
+Record Type=Procedure Attribute Count=13
+Record Type=Provenance Attribute Count=574
+
+
+          File=./json_dir/Sandy901_Conn188_f38fe4a9-1634-144c-0147-53c0300c1561.json
+
+
+Record Type=AllergyIntolerance Attribute Count=50
+Record Type=CarePlan Attribute Count=34
+Record Type=CareTeam Attribute Count=26
+Record Type=Claim Attribute Count=27
+Record Type=Condition Attribute Count=17
+Record Type=Device Attribute Count=17
+Record Type=DiagnosticReport Attribute Count=23
+Record Type=DocumentReference Attribute Count=28
+Record Type=Encounter Attribute Count=28
+Record Type=ExplanationOfBenefit Attribute Count=63
+Record Type=Immunization Attribute Count=13
+Record Type=MedicationRequest Attribute Count=13
+Record Type=Observation Attribute Count=19
+Record Type=Patient Attribute Count=83
+Record Type=Procedure Attribute Count=13
+Record Type=Provenance Attribute Count=410
+
+
+          File=./json_dir/Delmar187_Lesch175_6a15a792-ed41-e1f3-b942-3c2bd4a01ad6.json
+
+
+Record Type=CarePlan Attribute Count=30
+Record Type=CareTeam Attribute Count=31
+Record Type=Claim Attribute Count=25
+Record Type=Condition Attribute Count=18
+Record Type=DiagnosticReport Attribute Count=23
+Record Type=DocumentReference Attribute Count=28
+Record Type=Encounter Attribute Count=31
+Record Type=ExplanationOfBenefit Attribute Count=81
+Record Type=Immunization Attribute Count=13
+Record Type=MedicationRequest Attribute Count=16
+Record Type=Observation Attribute Count=19
+Record Type=Patient Attribute Count=71
+Record Type=Procedure Attribute Count=13
+Record Type=Provenance Attribute Count=315
+
+
+          File=./json_dir/Lesli455_Champlin946_1d2875d4-f60d-df84-d3e1-12dbafa29bd4.json
+
+
+Record Type=CarePlan Attribute Count=29
+Record Type=CareTeam Attribute Count=30
+Record Type=Claim Attribute Count=35
+Record Type=Condition Attribute Count=17
+Record Type=DiagnosticReport Attribute Count=23
+Record Type=DocumentReference Attribute Count=28
+Record Type=Encounter Attribute Count=28
+Record Type=ExplanationOfBenefit Attribute Count=81
+Record Type=Immunization Attribute Count=13
+Record Type=MedicationRequest Attribute Count=23
+Record Type=Observation Attribute Count=18
+Record Type=Patient Attribute Count=89
+Record Type=Procedure Attribute Count=13
+Record Type=Provenance Attribute Count=1518
+
+
+          File=./json_dir/Jane262_Strosin214_46b22d89-fe1a-3cf7-7ecb-b16c7390103f.json
+
+
+Record Type=CarePlan Attribute Count=30
+Record Type=CareTeam Attribute Count=31
+Record Type=Claim Attribute Count=35
+Record Type=Condition Attribute Count=18
+Record Type=DiagnosticReport Attribute Count=23
+Record Type=DocumentReference Attribute Count=28
+Record Type=Encounter Attribute Count=28
+Record Type=ExplanationOfBenefit Attribute Count=81
+Record Type=Immunization Attribute Count=13
+Record Type=MedicationRequest Attribute Count=14
+Record Type=Observation Attribute Count=19
+Record Type=Patient Attribute Count=84
+Record Type=Procedure Attribute Count=13
+Record Type=Provenance Attribute Count=350
+
+
