@@ -37,8 +37,8 @@ TEMP_FILE=/tmp/$$.dat
 send_mail ()
 {
 #
-echo "File name=${FILE_NAME}"
-echo "Email Address=${EMAIL_ADDRESS}"
+#echo "File name=${FILE_NAME}"
+#echo "Email Address=${EMAIL_ADDRESS}"
 #
 mailx  -s "${SUBJECT}" -a ${FILE_NAME} ${EMAIL_ADDRESS}   <<EOF    > ${TEMP_FILE}  2>&1
 Please see attached for your requested data.
