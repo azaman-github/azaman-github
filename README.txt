@@ -13,27 +13,10 @@ Attribute Selection
 1. Quite often than not, analysts want to view a subset of data , specially when
    the data record is too long and contains less important data.
 
-2. For this exercise, following attributes are selected for viewing :
-Record Type    Attribute Name
-1. Patient     Gender
-               birthDate
-               maritalStatus-text
-               multipleBirthBoolean
-               address-city 
-               address-state
-               address-country
-               address-postcode
-
-2. Claim
-
-
-3. Observation
-
-
+2. The solution presented here gives the functionality to maintain a list of attributes that are to be extracted.
 
 Data  Validation
 ================
-
 1. Due to not having any specified business rules, no validation will be performed
 
 Data Analysis
@@ -63,36 +46,55 @@ Data Analysis
 
 2. The child record may vary in their contents espicially in list of values for an attribute.
 
+3. The attribute counts for each record type for individual file  varies from file to file
+
+4. The aggregated count for each record from all the files are as follows:
+
+Record Type=CarePlan Attribute Count=22
+Record Type=CareTeam Attribute Count=26
+Record Type=Claim Attribute Count=25
+Record Type=Condition Attribute Count=17
+Record Type=DiagnosticReport Attribute Count=23
+Record Type=DocumentReference Attribute Count=28
+Record Type=Encounter Attribute Count=31
+Record Type=ExplanationOfBenefit Attribute Count=63
+Record Type=Immunization Attribute Count=13
+Record Type=MedicationRequest Attribute Count=16
+Record Type=Observation Attribute Count=19
+Record Type=Patient Attribute Count=87
+Record Type=Procedure Attribute Count=13
+Record Type=Provenance Attribute Count=840
 
 
-sample file
-===========
+Testing Approach
+================
+1. No auotomated testing has been performed for inferred schema because it's a big undertaking.
+2. No auotomated testing has been performed for data extraction because it's a big undertaking.
 
-List of record types
-====================
-
-2. Generate schema from existing files iusing python module called pyspark
-
-sample file
-===========
-
-List of record types
-====================
-
-
-3. Generate schema from existing files using  python module cvalled genson 
+Requirement of Automated Testing for Inferred Schema
+====================================================
+1. create test data set of each recoord type with all its complexity.
+2. Flatten out all the nested structures 
+3. Prepare list of of  all attributes , making duplicate attributes unique by appending unique sequence.
+4. This will constitute the baseline records for record types and attributes.
+5. Populate these structures with data 
+6. Execute the script json_to_schema.py
+7. Compare the output with baseline records.
  
-sample file
-===========
-
-List of record types
-====================
 
 
+Requirement of Automated Testing for Extracted Data
+===================================================
+1. create test data set of each recoord type with all its complexity
+2. Keep the test dataset small and because a baseline record for data extraction needs to be created manuuly 
+2. Execute the script json_to_csv.py to create csv files
+4. Compare the outputs
 
 
-Solution
-========
+
+
+SOLUTION DETAILS
+================
 Outlines
 ========
 1. Infer minimal schema by examining all json files
@@ -198,6 +200,7 @@ Overview : elv stands for extract,load and visulaise
                     -  View Attribute List for Extraction  ( allows user to view list of attributes for each record type
                                                              that will be extracted)  
                     -  Edit Attribute List for Extraction  ( allows user to edit (add/remove attributes from the list) 
+
                     -  View Inferred Schema                ( allows use to view the generated schema ) 
 Output   : None
 
@@ -206,5 +209,21 @@ Output   : None
 
 Run Instruction
 ===============
-1. Execute the script, elv.ksh
+1. Execute the script, elv.ksh and select option 5.
+   The script will ask for a directory path where all the json files are and 
+   an email address to which an email with an attachment of data extraction, will be sent.
+
+
+List of Deliverables
+====================
+1. Application Modules
+
+2. Static file
+     - schema.dat
+     - extract_att_list.dat
+     - 
+3. Analysis document:
+     - individual_file_att_count.dat
+     - aggregated_att_count.dat 
+
 
