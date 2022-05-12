@@ -1,5 +1,24 @@
-Requirement
-===========
+List of Contents
+================
+1.  Requirements
+2.  Constraints
+3.  Attribute Selection
+4.  Data Validation
+5.  Data Analysis
+6.  Testing Approach
+7.  Requirement of Automated Testing for Inferred Schema
+8.  Requirement of Automated Testing for Extracted Data
+9.  Solution
+10. Solution outlines
+11. List of  Modules
+12. Module Details
+13. Furthe Development of Solution
+14. List of Deliverables
+15. Run instructions
+
+
+REQUIREMENTS
+============
 1. We have a number of json data files that are heavily nested.
 2. Provide a solution that will help the visualisation and querying of this data
 
@@ -82,7 +101,6 @@ Requirement of Automated Testing for Inferred Schema
 7. Compare the output with baseline records.
  
 
-
 Requirement of Automated Testing for Extracted Data
 ===================================================
 1. create test data set of each recoord type with all its complexity
@@ -92,9 +110,9 @@ Requirement of Automated Testing for Extracted Data
 
 
 
-
 SOLUTION DETAILS
 ================
+
 Outlines
 ========
 1. Infer minimal schema by examining all json files
@@ -125,7 +143,9 @@ Name     : json_to_schema.py
 Type     : Python
 input    : json file directory
 
-Overview : The script infers minimal schema(record types and attributes) by examining all json files in a specific directory 
+Overview
+========
+The script infers minimal schema(record types and attributes) by examining all json files in a specific directory 
            It flattens out dictionary and list values.
            For list values, it makes second and subsequent elements unique by appending a unique number to it.
            Example
@@ -140,6 +160,28 @@ Overview : The script infers minimal schema(record types and attributes) by exam
            }
            Patient-id 
            Patient-gender
+
+Processing Outline
+==================
+1. READ all json files from the specified directory
+
+2. DEFINE record and attribute locator as follows:
+     record_loc="entry-resource-resourceType"
+     att_loc="entry-resource-"
+
+3. FOR each json file
+      LOAD content into python dictionary
+      FOR eack key, value pair
+         FLATTEN  key if it's dict
+         FLATTEN  key if it's list
+         IDENTIFY new record type
+            FOR this record type 
+               IDENTIFY attribute
+               IF duplicate found ( there will be if list values are flattened)
+                  MAKE it unique by appending a sequence 
+         
+   
+
             
 Output   : A file called schema.dat in the current directory ( directory from which elv.ksh script is launched)    
 
@@ -148,10 +190,38 @@ Name     : json_to_csv.py
 Type     : Python
 input    : json file directory
 
-Overview : The script creates csv files for each record type.
+Overview
+========
+The script creates csv files for each record type.
            For each record type,it retrievs the list of required attributes from the file and
            creates a csv file with those attributes only.
            Additionally, for child record, it adds the patient id to the csv record.
+
+Processing Outline
+==================
+1. READ all json files from the specified directory
+2. DEFINE record and attribute locator as follows:
+     record_loc="entry-resource-resourceType"
+     att_loc="entry-resource-"
+
+3. FOR each json file
+      LOAD content into python dictionary
+      FOR eack key, value pair
+         FLATTEN  key if it's dict
+         FLATTEN  key if it's list
+         IDENTIFY new record type
+         CLOSE  any open file for previous record type
+            FOR this record type 
+               IF a csv file already exists
+                   OPEN the file in append mode
+                   BUILD data record
+                   APPEND data record to file
+               ELSE
+                   OPEN the file in write  mode
+                   BUILD header and data record
+                   WRITE header record 
+                   WRITE data record
+               
 
 Output   : Following csv files are created in the json file directory.
                       -  AllergyIntolerance.csv
@@ -180,7 +250,19 @@ Output   : Following csv files are created in the json file directory.
 Name     : csv_to_excel.py
 Type     : Python 
 Input    : all csv files created by json_to_csv,py module
-Overview : The script creates an excel workbook with dedicated worksheet for each csv file.
+
+Overview
+========
+The script creates an excel workbook with dedicated worksheet for each csv file.
+
+Processing Outline
+==================
+INITIALISE workbook object
+FOR each csv filk
+   CREATE new workshhet
+   POPULATE rows with csv records
+
+
 Output   : Excel workbook in the directory of csv files.
 
 ----------------------------------------------------------------------------------------------------------------------------
@@ -206,15 +288,27 @@ Output   : None
 
 ----------------------------------------------------------------------------------------------------------------------------
 
+Furthe Development of Solution
+==============================
+1. Develop automated testing as mentioned at the top the document
 
-Run Instruction
-===============
-1. Execute the script, elv.ksh and select option 5.
-   The script will ask for a directory path where all the json files are and 
-   an email address to which an email with an attachment of data extraction, will be sent.
+2. There is a greate deal of common processing betwwen json_to_schema.py and json_to_csv.py
+
+3. When json_to_csv.py runs, it internally infers the schema and then proceeds to selecting the attributes  and
+   credate the csv files.
+
+4. These two scripts can be merged into a single script that will have command line switch to direct its processing.
+
+5. I have tried to do that and then realised that by doing this increases the  processing complexity. 
+
+6. Anyway, the solution can be extened in following ways :
+          - implement a web module that will maintain the list of attributes for extraction in the database 
+          - add additional visualisation tool but I think excel should stay as the tool for first line of data invetigation 
+          - as well as dictating the attribute list for extraction, similar idea can be implement for source files where 
+            user asks for specific data sets.
 
 
-List of Deliverables
+LIST OF DELIVERABLES
 ====================
 1. Application Modules
 
@@ -226,4 +320,21 @@ List of Deliverables
      - individual_file_att_count.dat
      - aggregated_att_count.dat 
 
+4. Powerpoint slide for solution architecture
 
+5. requirements.txt
+
+
+RUN INSTRUCTIONS
+================
+1. Make the shell scriot, elv.ksh executable
+
+2. Execute the script, elv.ksh and select option 5.
+   The script will ask for a directory path where all the json files are and 
+   an email address to which an email with an attachment of data extraction, will be sent.
+
+3. The script will keep displaying progress report
+
+4. The option, 10, 15, and 20 are self explanatory.
+
+5. Optionally, you can try running option, 10, 15, 20.
