@@ -325,6 +325,9 @@ LIST OF DELIVERABLES
 
 5. requirements.txt
 
+6. emis_patient_data.xlsx ( sample file output)
+
+7. ejrt.ksh (extract json record type)
 
 RUN INSTRUCTIONS
 ================
