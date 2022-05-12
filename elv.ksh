@@ -54,11 +54,13 @@ SCHEMA_FILE="./schema.dat"
 # define temporary directory
 #
 TEMP_DIR="./temp"
+ERROR_FILE=${TEMP_DIR}/elv.err
 #
 # define log directory
 #
 LOG_DIR="./log"
 #
+ATTACHMENT_FILE="\${DIR_PATH}/emis_patient_data.xlsx"
 #
 }
 #
@@ -242,28 +244,56 @@ do
 done
 #
 #
-echo  "${BLUE}${BOLD}INFO:Executing json_to_csv.py...${NC}${NORM}"
-python json_to_csv.py ${DIR_PATH}
+echo  "${BLUE}${BOLD}INFO:Executing json_to_schema.py...${NC}${NORM}"
+python json_to_schema.py ${DIR_PATH} > ${ERROR_FILE}  2>&1
 if [ $? -ne 0 ]
 then
-    echo -n "${RED}${BOLD}ERROR:Failed to complete the execution of the script;press any key to continue...${NC}${NORM}"
-    read DUMMY
-    return $FALSE
-fi
-#
-echo -n "${BLUE}${BOLD}INFO:Executing csv_to_excel.py...${NC}${NORM}"
-#python csv_to_excel.py ${DIR_PATH}
-echo "OK"
-if [ $? -ne 0 ]
-then
-    echo -n "${RED}${BOLD}ERROR:Failed to complete the execution of the script;press any key to continue...${NC}${NORM}"
+    echo -n "${RED}${BOLD}ERROR:Failed to complete the execution of the script because of `cat ${ERROR_FILE}`;press any key to continue...${NC}${NORM}"
     read DUMMY
     return $FALSE
 else
-    echo -n "${BLUE}${BOLD}INFO:Successfully completed the execution of the script;press any key to continue...${NC}${NORM}"
-    read DUMMY
+    echo "${BLUE}${BOLD}INFO:Successfully completed the execution of the script${NC}${NORM}"
 fi
 #
+echo  "${BLUE}${BOLD}INFO:Executing json_to_csv.py...${NC}${NORM}"
+python json_to_csv.py ${DIR_PATH} > ${ERROR_FILE}   2>&1
+if [ $? -ne 0 ]
+then
+    echo -n "${RED}${BOLD}ERROR:Failed to complete the execution of the script because of `cat ${ERROR_FILE}`;press any key to continue...${NC}${NORM}"
+    read DUMMY
+    return $FALSE
+else
+    echo "${BLUE}${BOLD}INFO:Successfully completed the execution of the script${NC}${NORM}"
+fi
+#
+echo -n "${BLUE}${BOLD}INFO:Executing csv_to_excel.py...${NC}${NORM}"
+python csv_to_excel.py ${DIR_PATH} > ${ERROR_FILE}  2>&1
+if [ $? -ne 0 ]
+then
+    echo -n "${RED}${BOLD}ERROR:Failed to complete the execution of the script because of `cat ${ERROR_FILE}`;press any key to continue...${NC}${NORM}"
+    read DUMMY
+    return $FALSE
+else
+    echo  "${BLUE}${BOLD}INFO:Successfully completed the execution of the script${NC}${NORM}"
+fi
+#
+# evaluate attachment file
+#
+ATTACHMENT_FILE=`eval echo ${ATTACHMENT_FILE}`
+echo "${BLUE}${BOLD}INFO:Sensing email to ${EMAIL_ADDRESS} with attachment, ${ATTACHMENT_FILE} ...${NC}${NORM}"
+#
+#
+sm.ksh ${ATTACHMENT_FILE}  ${EMAIL_ADDRESS} > ${ERROR_FILE}   2>&1
+if [ $? -ne 0 ]
+then
+    echo -n "${RED}${BOLD}ERROR:Failed to send the mail because of `cat ${ERROR_FILE}`;press any key to continue...${NC}${NORM}"
+    read DUMMY
+    return $FALSE
+else
+    echo -n  "${BLUE}${BOLD}INFO:Successfully sent the email;press any key to continue...${NC}${NORM}"
+    read DUMMY
+    return $TRUE
+fi
 #
 #
 return $TRUE
@@ -379,7 +409,7 @@ do
      echo   "######################################"
      echo   "# ${ROOT_MENU} #"
      echo   "#                                    #"
-     echo   "#  5. Run luv scripts                #"
+     echo   "#  5. Run ELV scripts                #"
      echo   "# 10. View Att List for Extraction   #"
      echo   "# 15. Edit Att List for Extraction   #"
      echo   "# 20. View Inferred Schema           #"
