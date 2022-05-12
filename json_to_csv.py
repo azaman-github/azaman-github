@@ -39,6 +39,7 @@ The module is used to create csv files from json data files.
 #                  -  process_next_record_type (key,val)
 #                  -  process_next_attribute   (key,val)
 #                  -  process_new_instance_of_same_record_type()
+#                  -  write_to_last_csv_file()
 #                  -  main()
 #
 #
@@ -84,6 +85,13 @@ current_record_type = ""
 global resource_no 
 resource_no = 0
 #
+# used to identify header record for record type other than patient 
+# in order to add patient id 
+#
+global new_record
+new_record = False
+global patient_id
+patient_id = ""
 # list of record type
 #
 global  lort 
@@ -294,8 +302,10 @@ def process_new_record_type(i_key, i_val):
     global data_rec
     global record_no
     global current_record_type
+    global new_record
     #
     #
+    new_record = True
     current_record_type=i_val
     store_record_type(current_record_type)
     #
@@ -398,7 +408,11 @@ def process_next_attribute  (i_key,i_val):
     global header_rec
     global data_rec
     global key_sequence
+    global new_record
+    global patient_id
     #
+    if current_record_type == "Patient"  and i_key == "entry-resource-id" :
+        patient_id = i_val
     if check_for_dup_att_name(current_record_type, i_key) :
         #
         # flattened attribute
@@ -419,6 +433,13 @@ def process_next_attribute  (i_key,i_val):
          raise Exception(f"ERROR:Failed to locate record type,\
          {current_record_type} in reference file for record type=\
          {current_record_type}" )
+
+    if current_record_type != "Patient" and new_record == True :
+        new_record = False
+        header_item = "patient_id"  +  ","
+        data_item = patient_id + ","
+        header_rec += header_item
+        data_rec   += data_item
     #
     # add key to header item
     #
@@ -591,7 +612,7 @@ def main():
             load_json_file (file)  
             process_json_records() 
         #
-        write_to_last_csv_file ()
+        write_last_csv_record()
     
         logging.info(f"Module-{MODULE_NAME} Execution Completed")
 
