@@ -4,7 +4,7 @@ a single or multiple json files in a directory
 '''
 #
 # Name        : infer_minimal_json_schema.py
-# Description : The program is used to infer json schema (record types and
+# Description : The program is used to infer json schema(record types and
 #               attributes) from json files.
 
 # Input       : json file directory path
