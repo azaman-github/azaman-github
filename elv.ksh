@@ -266,7 +266,7 @@ else
     echo "${BLUE}${BOLD}INFO:Successfully completed the execution of the script${NC}${NORM}"
 fi
 #
-echo -n "${BLUE}${BOLD}INFO:Executing csv_to_excel.py...${NC}${NORM}"
+echo  "${BLUE}${BOLD}INFO:Executing csv_to_excel.py...${NC}${NORM}"
 python csv_to_excel.py ${DIR_PATH} > ${ERROR_FILE}  2>&1
 if [ $? -ne 0 ]
 then
