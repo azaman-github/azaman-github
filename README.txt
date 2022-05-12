@@ -89,6 +89,7 @@ Testing Approach
 ================
 1. No auotomated testing has been performed for inferred schema because it's a big undertaking.
 2. No auotomated testing has been performed for data extraction because it's a big undertaking.
+3. Manual checks and use of shell script
 
 Requirement of Automated Testing for Inferred Schema
 ====================================================
