@@ -13,7 +13,7 @@ a single or multiple json files in a directory
 #                  -  flatten_dict_values         (key,val)
 #                  -  flatten_list_values         (key,val)
 #                  -  infer_schema                (key,val)
-#                  -  print_schema                (key,val)
+#                  -  print_schema_to_file        ()
 #                  -  store_record_name           (record_name)
 #                  -  check_for_dup_record_name   (record_name)
 #                  -  store_att_name              (record_name)
@@ -268,7 +268,6 @@ def infer_schema() :
     '''
 
     for k,v in work_schema_dict.items() :
- 
         if (str(type(v))).find("'list'")  != -1:
             flatten_list_values (k,v)
 
@@ -357,6 +356,7 @@ def main () :
             load_json_file (fname) 
             infer_schema()
 
+        print_schema_to_file()
 
         logging.info(f"Module-{MODULE_NAME} Execution Completed")
 
