@@ -1,0 +1,30 @@
+# 
+# 1. list of attributes for csv file for each record type
+# <record type>,<att name>,....
+#
+# 2. Any comment must start with # sign
+#
+# 3. Do not edit by hand
+
+# 4. A patient id would be automatically added to all record types, excpet patient of course
+#
+AllergyIntolerance,id,meta-profile,recordedDate,
+CarePlan,id,meta-profile,text-status,
+CareTeam,id,meta-profile,status,
+Claim,id,status,billablePeriod-start,
+Condition,id,meta-profile,
+Device,id,meta-profile,status,lotN,
+DiagnosticReport,id,meta-profile,
+DocumentReference,id,meta-profile,
+Encounter,id,meta-profile,
+ExplanationOfBenefit,id,contained-resourceType,
+ImagingStudy,id,identifier-use,identifier-system,
+Immunization,id,meta-profile,status,
+Medication,id,meta-profile,code-text,status,
+MedicationAdministration,id,status,
+MedicationRequest,id,meta-profile,,
+Observation,id,meta-profile-1,status,
+Patient,gender,birthDate,maritalStatus-text,multipleBirthBoolean,address-postalCode,
+Procedure,id,meta-profile,status,
+Provenance,id,meta-profile,
+SupplyDelivery,id,status,patient-reference,
