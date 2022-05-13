@@ -7,6 +7,9 @@
 # Date        Author    Description
 #------------------------------------------------------------------------------------------
 # 08/05/2022  A Zaman   Initial Creation
+# 13/05/2022  A Zaman   Modified perform_sanity_check () 
+#                       removed check for infer_minimal_json_schema.py 
+#                       added check for json_to_schema.py 
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -106,13 +109,13 @@ perform_sanity_check ()
 #
 ERROR_FILE="/tmp/elv.err"
 #
-# check for infer_minimal_json_schema.py
+# check for json_to_schema.py
 #
-if [ ! -f infer_minimal_json_schema.py ]
+if [ ! -f json_to_schema.py ]
 then
      echo -n "${RED}ERROR:infer_json_schema.py script is missing from current directory;press any key to continue...${NC}"
      read DUMMY
-     return $FALSE
+     exit 1
 fi
 #
 # check for schema.dat file
@@ -121,7 +124,7 @@ if [ ! -f ${SCHEMA_FILE}  ]
 then
      echo -n "${RED}ERROR:${SCHEMA_FILE} file is missing from current directory;press any key to continue...${NC}"
      read DUMMY
-     return $FALSE
+     exit 1 
 fi
 #
 # check for extract_att_list.dat
@@ -130,7 +133,7 @@ if [ ! -f extract_att_list.dat  ]
 then
      echo -n "${RED}ERROR:extract_att_list.dat file is missing from current directory;press any key to continue...${NC}"
      read DUMMY
-     return $FALSE
+     exit 1     
 fi
 #
 #
@@ -140,7 +143,7 @@ if [ ! -f json_to_csv.py ]
 then
      echo -n "${RED}ERROR:json_to_csv.py script is missing from current directory;press any key to continue...${NC}"
      read DUMMY
-     return $FALSE
+     exit 1
 fi
 #
 # check for csv_to_excel.py
@@ -149,7 +152,7 @@ if [ ! -f csv_to_excel.py ]
 then
      echo -n "${RED}ERROR:csv_to_ecxcel.py script is missing from current directory;press any key to continue...${NC}"
      read DUMMY
-     return $FALSE
+     exit 1 
 fi
 #
 # check for .temp directory
@@ -163,7 +166,7 @@ then
          echo "${RED}ERROR:Failed to create temporary directory(${TEMP_DIR})${NC}"
          echo -n "${RED}ERROR:`cat ${ERROR_FILE}`;press any key to continue...${NC}"
          read DUMMY
-         return $FALSE
+         exit 1
      fi
 fi
 #
@@ -179,7 +182,7 @@ then
          echo -n "${RED}ERROR:Failed to create log directory(${TEMP_DIR})${NC}"
          echo -n "${RED}ERROR:`cat ${ERROR_FILE}`;press any key to continue...${NC}"
          read DUMMY
-         return $FALSE
+         exit 1
      fi
 fi
 #
@@ -188,7 +191,7 @@ if [ ! -f sm.ksh  ]
 then
      echo -n "${RED}ERROR:sm.ksh script is missing from current directory;press any key to continue...${NC}"
      read DUMMY
-     return $FALSE
+     exit 1  
 fi
 #
 #
